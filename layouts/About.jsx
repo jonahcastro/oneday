@@ -64,7 +64,7 @@ export default function About() {
               <div className="rounded bg-white p-5 shadow-xl ring-1 ring-secondary/5 drop-shadow-sm md:drop-shadow-md">
                 <div>
                   <img
-                    src="/svg/Preservation of assets.svg"
+                    src="/svg/Preservation of Assets.svg"
                     alt="Preservation of assets"
                     className="h-12 w-12"
                   />
