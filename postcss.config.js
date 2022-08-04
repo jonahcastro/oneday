@@ -3,6 +3,7 @@ module.exports = {
     '@fullhuman/postcss-purgecss': process.env.NODE_ENV === 'production' && {
       content: [
         './components/**/*.{js,ts,jsx,tsx}',
+        './layouts/**/*.{js,ts,jsx,tsx}',
         './pages/**/*.{js,ts,jsx,tsx}',
       ],
       defaultExtractor: (content) => {
