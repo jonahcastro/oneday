@@ -1,46 +1,44 @@
-const defaultTheme = require('tailwindcss/defaultTheme')
+const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
   content: [
-    './components/**/*.{js,ts,jsx,tsx}',
-    './layouts/**/*.{js,ts,jsx,tsx}',
-    './pages/**/*.{js,ts,jsx,tsx}',
+    "./components/**/*.{js,ts,jsx,tsx}",
+    "./layouts/**/*.{js,ts,jsx,tsx}",
+    "./pages/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     screens: {
-      xxs: '320px',
-      sm: '480px',
-      md: '768px',
-      lg: '976px',
-      xl: '1440px',
-      '2xl': '1536px',
-      '3xl': '1900px'
+      xxs: "320px",
+      sm: "480px",
+      md: "768px",
+      lg: "976px",
+      xl: "1440px",
+      "2xl": "1536px",
+      "3xl": "1900px",
     },
     container: {
       center: true,
-      padding:{
-        sm: '1rem',
-        md: '2rem',
-        lg: '4rem'
-      }
+      padding: {
+        sm: "1rem",
+        md: "2rem",
+        lg: "4rem",
+      },
     },
     extend: {
       lineHeight: {
-        '12': '4rem',
+        12: "4rem",
       },
       colors: {
-        purple: '#304E86',
-        secondary: '#121212',
-        cream: '#FFFCF5',
-
+        purple: "#304E86",
+        secondary: "#121212",
+        cream: "#FFFCF5",
       },
-      backgroundImage: {
-      },
+      backgroundImage: {},
       fontFamily: {
-        'sans': ['Poppins', ...defaultTheme.fontFamily.sans],
-        display: ['Playfair Display', ...defaultTheme.fontFamily.sans],
+        sans: ["Poppins", ...defaultTheme.fontFamily.sans],
+        display: ["Playfair Display", ...defaultTheme.fontFamily.sans],
       },
     },
   },
   plugins: [],
-}
+};
