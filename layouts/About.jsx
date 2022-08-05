@@ -1,9 +1,37 @@
 import { useEffect } from "react";
-import { MailIcon } from "@heroicons/react/outline";
+import { useInView } from "react-intersection-observer";
+import { motion, useAnimation  } from "framer-motion";
+
+
 
 export default function About() {
+
+  const easing = [0.455, 0.03, 0.515, 0.955];
+  const sectionVariant = {
+    visible: { opacity: 1,
+      transition: { duration: 1, ease: easing } },
+    hidden: { opacity: 0}
+  };
+  
+  const control = useAnimation();
+  const [ref, inView] = useInView();
+  
+  useEffect(() => {
+    if (inView) {
+      control.start("visible");
+    } else {
+      control.start("hidden");
+    }
+  }, [control, inView])
   return (
-    <section id="about" className="bg-cream">
+    <motion.section
+      id="about"
+      className="bg-cream"
+      ref={ref}
+      variants={sectionVariant}
+      initial="hidden"
+      animate={control}
+      >
       <img
         className="absolute mt-[28rem] block select-none md:w-1/3 lg:my-20 lg:w-96 3xl:mt-20"
         src="/svg/about-bg.svg"
@@ -13,7 +41,11 @@ export default function About() {
         <div className="grid grid-cols-1 items-center justify-center gap-24 lg:grid-cols-3">
           <div className="lg:col-span-2" role="gridcell">
             <div className="grid grid-cols-2 grid-rows-3 gap-6 md:grid-cols-3 md:grid-rows-2 lg:gap-12">
-              <div className="rounded bg-white p-5 shadow-xl ring-1 ring-secondary/5 drop-shadow-sm md:drop-shadow-md">
+              <motion.div
+                className="rounded bg-white p-5 shadow-xl ring-1 ring-secondary/5 drop-shadow-sm md:drop-shadow-md"
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+              >
                 <div>
                   <img
                     src="/svg/Liquidity.svg"
@@ -24,8 +56,12 @@ export default function About() {
                 <h3 className="mt-5 font-display text-sm font-medium tracking-tight md:text-lg">
                   Near instant liquidityfor your loved ones
                 </h3>
-              </div>
-              <div className="rounded bg-white p-5 shadow-xl ring-1 ring-secondary/5 drop-shadow-sm md:drop-shadow-md">
+              </motion.div>
+              <motion.div
+                className="rounded bg-white p-5 shadow-xl ring-1 ring-secondary/5 drop-shadow-sm md:drop-shadow-md"
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+              >
                 <div>
                   <img
                     src="/svg/Avoidance of Probate.svg"
@@ -36,8 +72,12 @@ export default function About() {
                 <h3 className="mt-5 font-display text-sm font-medium tracking-tight md:text-lg">
                   Avoidance of probate
                 </h3>
-              </div>
-              <div className="rounded bg-white p-5 shadow-xl ring-1 ring-secondary/5 drop-shadow-sm md:drop-shadow-md">
+              </motion.div>
+              <motion.div
+                className="rounded bg-white p-5 shadow-xl ring-1 ring-secondary/5 drop-shadow-sm md:drop-shadow-md"
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+              >
                 <div>
                   <img
                     src="/svg/Succession Planning.svg"
@@ -48,8 +88,12 @@ export default function About() {
                 <h3 className="mt-5 font-display text-sm font-medium tracking-tight md:text-lg">
                   Hassle-free succession planning
                 </h3>
-              </div>
-              <div className="rounded bg-white p-5 shadow-xl ring-1 ring-secondary/5 drop-shadow-sm md:drop-shadow-md">
+              </motion.div>
+              <motion.div
+                className="rounded bg-white p-5 shadow-xl ring-1 ring-secondary/5 drop-shadow-sm md:drop-shadow-md"
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+              >
                 <div>
                   <img
                     src="/svg/Asset Protection.svg"
@@ -60,8 +104,12 @@ export default function About() {
                 <h3 className="mt-5 font-display text-sm font-medium tracking-tight md:text-lg">
                   Asset Protection
                 </h3>
-              </div>
-              <div className="rounded bg-white p-5 shadow-xl ring-1 ring-secondary/5 drop-shadow-sm md:drop-shadow-md">
+              </motion.div>
+              <motion.div
+                className="rounded bg-white p-5 shadow-xl ring-1 ring-secondary/5 drop-shadow-sm md:drop-shadow-md"
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+              >
                 <div>
                   <img
                     src="/svg/Preservation of Assets.svg"
@@ -72,8 +120,12 @@ export default function About() {
                 <h3 className="mt-5 font-display text-sm font-medium tracking-tight md:text-lg">
                   Preservation of assets
                 </h3>
-              </div>
-              <div className="rounded bg-white p-5 shadow-xl ring-1 ring-secondary/5 drop-shadow-sm md:drop-shadow-md">
+              </motion.div>
+              <motion.div
+                className="rounded bg-white p-5 shadow-xl ring-1 ring-secondary/5 drop-shadow-sm md:drop-shadow-md"
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+              >
                 <div>
                   <img
                     src="/svg/Tax Planning.svg"
@@ -84,7 +136,7 @@ export default function About() {
                 <h3 className="mt-5 font-display text-sm font-medium tracking-tight md:text-lg">
                   Tax Planning
                 </h3>
-              </div>
+              </motion.div>
             </div>
           </div>
           <div className="order-first lg:order-none" role="gridcell">
@@ -107,6 +159,6 @@ export default function About() {
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }

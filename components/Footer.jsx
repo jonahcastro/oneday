@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { motion  } from "framer-motion";
 
 export default function Footer() {
   return (
@@ -16,24 +17,33 @@ export default function Footer() {
               and securely from the comfort of your own home.
             </p>
             <div className="mt-8 flex flex-row gap-4" role="grid">
-              <Link
-                className="h-14 w-14 hover:fill-cyan-700"
+              <motion.a
+                initial={{ scale: 0, rotate: 0, opacity: 0.5, x: -100 }}
+                animate={{ scale: 1, rotate: 0, opacity: 1, x: 0 }}
+                whileHover={{ scale: 2, rotate: 45 }}
+                className="w-10 h-10 bg-purple rounded-xl"
                 href="https://linkedin.com"
               >
-                <a role="button">
-                  <img src="/socials/linkedin.svg" alt="LinkedIn" />
-                </a>
-              </Link>
-              <Link className="h-14 w-14" href="https://instagram.com">
-                <a role="button">
+                <img src="/socials/linkedin.svg" alt="LinkedIn" />
+              </motion.a>
+              <motion.a
+                initial={{ scale: 0, rotate: 0, opacity: 0.5, x: -100 }}
+                animate={{ scale: 1, rotate: 0, opacity: 1, x: 0 }}
+                whileHover={{ scale: 2, rotate: 45 }}
+                className="w-10 h-10 bg-purple rounded-xl"
+                href="https://instagram.com"
+              >
                   <img src="/socials/instagram.svg" alt="Instagram" />
-                </a>
-              </Link>
-              <Link className="h-14 w-14" href="https://twitter.com">
-                <a role="button">
+              </motion.a>
+              <motion.a
+                initial={{ scale: 0, rotate: 0, opacity: 0.5, x: -100 }}
+                animate={{ scale: 1, rotate: 0, opacity: 1, x: 0 }}
+                whileHover={{ scale: 2, rotate: 45 }}
+                className="w-10 h-10 bg-purple rounded-xl"
+                href="https://twitter.com"
+              >
                   <img src="/socials/twitter.svg" alt="Twitter" />
-                </a>
-              </Link>
+              </motion.a>
             </div>
           </div>
           <div className="flex flex-col items-start gap-8 md:flex-row lg:gap-24">

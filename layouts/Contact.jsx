@@ -1,9 +1,34 @@
 import { useEffect } from "react";
 import { MailIcon } from "@heroicons/react/outline";
+import { useInView } from "react-intersection-observer";
+import { motion, useAnimation  } from "framer-motion";
 
 export default function Contact() {
+  const easing = [0.455, 0.03, 0.515, 0.955];
+  const sectionVariant = {
+    visible: { opacity: 1,
+      transition: { duration: 1, ease: easing } },
+    hidden: { opacity: 0}
+  };
+  
+  const control = useAnimation();
+  const [ref, inView] = useInView();
+  
+  useEffect(() => {
+    if (inView) {
+      control.start("visible");
+    } else {
+      control.start("hidden");
+    }
+  }, [control, inView])
   return (
-    <section id="contact">
+    <motion.section
+      id="contact"
+      ref={ref}
+      variants={sectionVariant}
+      initial="hidden"
+      animate={control}
+      >
       <div className="container">
         <img
           className="absolute right-10 mt-60 w-40 select-none md:right-6 md:mt-10 md:w-1/4 lg:right-[8.4rem] lg:mt-5 lg:w-52 3xl:hidden"
@@ -64,6 +89,6 @@ export default function Contact() {
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }
