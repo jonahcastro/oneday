@@ -1,28 +1,24 @@
 import { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
-import { motion, useAnimation  } from "framer-motion";
-
-
+import { motion, useAnimation } from "framer-motion";
 
 export default function About() {
-
   const easing = [0.455, 0.03, 0.515, 0.955];
   const sectionVariant = {
-    visible: { opacity: 1,
-      transition: { duration: 1, ease: easing } },
-    hidden: { opacity: 0}
+    visible: { opacity: 1, transition: { duration: 1, ease: easing } },
+    hidden: { opacity: 0 },
   };
-  
+
   const control = useAnimation();
   const [ref, inView] = useInView();
-  
+
   useEffect(() => {
     if (inView) {
       control.start("visible");
     } else {
       control.start("hidden");
     }
-  }, [control, inView])
+  }, [control, inView]);
   return (
     <motion.section
       id="about"
@@ -31,7 +27,7 @@ export default function About() {
       variants={sectionVariant}
       initial="hidden"
       animate={control}
-      >
+    >
       <img
         className="absolute mt-[28rem] block select-none md:w-1/3 lg:my-20 lg:w-96 3xl:mt-20"
         src="/svg/about-bg.svg"

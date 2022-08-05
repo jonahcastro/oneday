@@ -1,5 +1,4 @@
-import Link from "next/link";
-import { motion  } from "framer-motion";
+import { motion } from "framer-motion";
 
 export default function Footer() {
   return (
@@ -21,7 +20,7 @@ export default function Footer() {
                 initial={{ scale: 0, rotate: 0, opacity: 0.5, x: -100 }}
                 animate={{ scale: 1, rotate: 0, opacity: 1, x: 0 }}
                 whileHover={{ scale: 2, rotate: 45 }}
-                className="w-10 h-10 bg-purple rounded-xl"
+                className="h-10 w-10 rounded-xl bg-purple"
                 href="https://linkedin.com"
               >
                 <img src="/socials/linkedin.svg" alt="LinkedIn" />
@@ -30,19 +29,19 @@ export default function Footer() {
                 initial={{ scale: 0, rotate: 0, opacity: 0.5, x: -100 }}
                 animate={{ scale: 1, rotate: 0, opacity: 1, x: 0 }}
                 whileHover={{ scale: 2, rotate: 45 }}
-                className="w-10 h-10 bg-purple rounded-xl"
+                className="h-10 w-10 rounded-xl bg-purple"
                 href="https://instagram.com"
               >
-                  <img src="/socials/instagram.svg" alt="Instagram" />
+                <img src="/socials/instagram.svg" alt="Instagram" />
               </motion.a>
               <motion.a
                 initial={{ scale: 0, rotate: 0, opacity: 0.5, x: -100 }}
                 animate={{ scale: 1, rotate: 0, opacity: 1, x: 0 }}
                 whileHover={{ scale: 2, rotate: 45 }}
-                className="w-10 h-10 bg-purple rounded-xl"
+                className="h-10 w-10 rounded-xl bg-purple"
                 href="https://twitter.com"
               >
-                  <img src="/socials/twitter.svg" alt="Twitter" />
+                <img src="/socials/twitter.svg" alt="Twitter" />
               </motion.a>
             </div>
           </div>

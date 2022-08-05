@@ -7,17 +7,16 @@ export default function Banner() {
     <section className="container">
       <div className="my-10 md:my-20">
         <div className="grid grid-cols-1 items-center justify-center gap-8 lg:grid-cols-2">
-        <motion.div 
-          initial="hidden"
-          animate="visible"
-          variants=
-          {{
-            hidden: { x: "-100%" },
-            visible: {
-              x: "0%",
-              transition: { duration: 1, delay: 0.2}
-            }
-          }}
+          <motion.div
+            initial="hidden"
+            animate="visible"
+            variants={{
+              hidden: { x: "-100%" },
+              visible: {
+                x: "0%",
+                transition: { duration: 1, delay: 0.2 },
+              },
+            }}
           >
             <div role="gridcell">
               <h1 className="font-display text-3xl font-bold capitalize leading-8 md:text-5xl lg:leading-12">
@@ -25,8 +24,8 @@ export default function Banner() {
               </h1>
 
               <p className="mt-5 mr-24 font-sans text-sm leading-7 text-secondary/60 lg:pr-20">
-                Estate planning for the new age. Setup trusts quickly, affordably
-                and securely from the comfort of your own home.
+                Estate planning for the new age. Setup trusts quickly,
+                affordably and securely from the comfort of your own home.
               </p>
               <div className="mt-8 flex-none gap-4 md:flex">
                 <label className="relative block">
@@ -45,33 +44,32 @@ export default function Banner() {
                   subscribe
                 </button>
               </div>
-            </div> 
-            </motion.div>
-            <motion.div
-             
-              initial="hidden"
-              animate="visible"
-              variants={{
-                hidden: {
-                  scale: 0.8,
-                  opacity: 0,
+            </div>
+          </motion.div>
+          <motion.div
+            initial="hidden"
+            animate="visible"
+            variants={{
+              hidden: {
+                scale: 0.8,
+                opacity: 0,
+              },
+              visible: {
+                scale: 1,
+                opacity: 1,
+                transition: {
+                  delay: 0.4,
                 },
-                visible: {
-                  scale: 1,
-                  opacity: 1,
-                  transition: {
-                    delay: 0.4,
-                  },
-                },
-              }}
-            >
-              <div className="order-first lg:order-none">
+              },
+            }}
+          >
+            <div className="order-first lg:order-none">
               <img
                 src="/images/home.png"
                 alt="ONEDAY home"
                 className="w-60 md:w-5/6 lg:mx-auto lg:w-full"
               />
-              </div>
+            </div>
           </motion.div>
         </div>
       </div>
