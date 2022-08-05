@@ -36,7 +36,7 @@ export default function Footer() {
               </Link>
             </div>
           </div>
-          <div className="flex flex-col items-start gap-8 lg:flex-row lg:gap-24">
+          <div className="flex flex-col items-start gap-8 md:flex-row lg:gap-24">
             <nav aria-label="Our Products">
               <div className="text-primary-300 font-display text-xl capitalize tracking-wide">
                 Our Products

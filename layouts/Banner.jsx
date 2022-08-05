@@ -21,7 +21,7 @@ export default function Banner() {
                   <MailIcon className="h-5 w-5 text-secondary/60" />
                 </span>
                 <input
-                  className="block w-full rounded-full border border-slate-200 bg-white py-3 pl-14 pr-20 shadow-sm placeholder:text-sm placeholder:text-secondary/60 focus:border-purple focus:outline-none focus:ring-1 focus:ring-purple sm:text-sm"
+                  className="block w-full rounded-full border border-slate-200 bg-white py-3 pl-14 pr-10 shadow-sm placeholder:text-sm placeholder:text-secondary/60 focus:border-purple focus:outline-none focus:ring-1 focus:ring-purple sm:text-sm md:w-80"
                   placeholder="Stay up to date"
                   type="text"
                   name="email"

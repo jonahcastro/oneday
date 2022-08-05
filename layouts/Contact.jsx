@@ -6,7 +6,7 @@ export default function Contact() {
     <section id="contact">
       <div className="container">
         <img
-          className="absolute right-10 mt-60 w-40 select-none md:right-6 md:mt-10 md:w-1/4 lg:right-[8.4rem] lg:mt-5 lg:w-52"
+          className="absolute right-10 mt-60 w-40 select-none md:right-6 md:mt-10 md:w-1/4 lg:right-[8.4rem] lg:mt-5 lg:w-52 3xl:hidden"
           src="/svg/circular-bg-alt.svg"
           alt="Circular lines"
         />
@@ -28,7 +28,7 @@ export default function Contact() {
                 <MailIcon className="h-5 w-5 text-secondary/60" />
               </span>
               <input
-                className="block w-full rounded-full border border-slate-200 bg-white py-3 pl-14 pr-0 shadow-sm placeholder:text-sm placeholder:text-secondary/60 focus:border-purple focus:outline-none focus:ring-1 focus:ring-purple sm:text-sm lg:pr-20"
+                className="block w-full rounded-full border border-slate-200 bg-white py-3 pl-14 pr-0 shadow-sm placeholder:text-sm placeholder:text-secondary/60 focus:border-purple focus:outline-none focus:ring-1 focus:ring-purple sm:text-sm lg:w-80 lg:pr-10"
                 placeholder="Stay up to date"
                 type="text"
                 name="email"
@@ -42,7 +42,7 @@ export default function Contact() {
       </div>
       <div className="container my-20">
         <img
-          className="absolute right-10 mt-60 w-40 select-none md:right-6 md:mt-10 md:w-1/4 lg:right-[8.4rem] lg:mt-5 lg:w-52"
+          className="absolute right-10 mt-60 w-40 select-none md:right-6 md:mt-10 md:w-1/4 lg:right-[8.4rem] lg:mt-5 lg:w-52 3xl:hidden"
           src="/svg/circular-bg.svg"
           alt="Circular lines"
         />

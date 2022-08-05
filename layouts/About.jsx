@@ -5,7 +5,7 @@ export default function About() {
   return (
     <section id="about" className="bg-cream">
       <img
-        className="absolute mt-96 block select-none md:w-1/3 lg:my-20 lg:w-96"
+        className="absolute mt-[28rem] block select-none md:w-1/3 lg:my-20 lg:w-96 3xl:mt-20"
         src="/svg/about-bg.svg"
         alt="Circular lines"
       />
