@@ -2,39 +2,36 @@ import { MailIcon } from "@heroicons/react/outline";
 import { motion } from "framer-motion";
 import React, { useState, useEffect } from "react";
 import { useForm } from "react-hook-form";
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export default function Banner() {
   const {
     register,
     formState: { errors },
     handleSubmit,
-    reset
-  } = useForm({ mode: "onBlur", defaultValues: { Email: "" }  });
+    reset,
+  } = useForm({ mode: "onBlur", defaultValues: { Email: "" } });
 
   async function onSubmit(data, e) {
-    
-    await fetch('/api/mail', {
-      method: 'POST',
-      body: JSON.stringify(data)
+    await fetch("/api/mail", {
+      method: "POST",
+      body: JSON.stringify(data),
     })
-    .then((response) => response.json())
-    //Then with the data from the response in JSON...
-    .then((result) => {
-      if(result.status == 'success'){
-        toast.success(result.message, {
-          position: toast.POSITION.TOP_RIGHT
-        });
-      }else{
-        toast.error(result.message, {
-          position: toast.POSITION.TOP_RIGHT
-        });
-      }
-      
-    })
+      .then((response) => response.json())
+      //Then with the data from the response in JSON...
+      .then((result) => {
+        if (result.status == "success") {
+          toast.success(result.message, {
+            position: toast.POSITION.TOP_RIGHT,
+          });
+        } else {
+          toast.error(result.message, {
+            position: toast.POSITION.TOP_RIGHT,
+          });
+        }
+      });
     e.target.reset();
-    
   }
 
   return (
@@ -93,7 +90,7 @@ export default function Banner() {
 
                 <button
                   className={`mt-3 w-full rounded-full border bg-purple px-6 py-3 text-sm uppercase tracking-wide text-white hover:bg-purple/90 hover:shadow-md md:mt-0 md:w-auto`}
-               >
+                >
                   subscribe
                 </button>
               </form>
