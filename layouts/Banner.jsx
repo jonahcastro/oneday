@@ -2,7 +2,6 @@ import { MailIcon } from "@heroicons/react/outline";
 import { motion } from "framer-motion";
 import React, { useState, useEffect } from "react";
 import { useForm } from "react-hook-form";
-import { ToastContainer, toast } from "react-toastify";
 
 export default function Banner() {
   const {
@@ -11,7 +10,7 @@ export default function Banner() {
     handleSubmit,
     reset,
   } = useForm({ mode: "onBlur", defaultValues: { Email: "" } });
-
+  const [formSuccess, setFormSuccess] = useState([]);
   async function onSubmit(data, e) {
     await fetch("/api/mail", {
       method: "POST",
@@ -20,22 +19,17 @@ export default function Banner() {
       .then((response) => response.json())
       //Then with the data from the response in JSON...
       .then((result) => {
-        if (result.status == "success") {
-          toast.success(result.message, {
-            position: toast.POSITION.TOP_RIGHT,
-          });
-        } else {
-          toast.error(result.message, {
-            position: toast.POSITION.TOP_RIGHT,
-          });
-        }
+        setFormSuccess([true, result.message]);
+        setTimeout(() => {
+          // After 3 seconds set the show value to false
+          setFormSuccess(false);
+        }, 5000);
       });
     e.target.reset();
   }
 
   return (
     <section className="container">
-      <ToastContainer />
       <div className="my-10 md:my-20">
         <div className="grid grid-cols-1 items-center justify-center gap-8 lg:grid-cols-2">
           <motion.div
@@ -93,6 +87,9 @@ export default function Banner() {
                   subscribe
                 </button>
               </form>
+              <span className="mt-2 text-xs font-medium tracking-wide text-lime-500">
+                {!formSuccess ? "" : formSuccess}
+              </span>
               <span className="mt-2 ml-10 text-xs font-medium tracking-wide text-red-500">
                 {errors.Email?.message}
               </span>
