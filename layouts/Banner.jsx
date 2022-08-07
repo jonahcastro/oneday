@@ -1,6 +1,6 @@
 import { MailIcon } from "@heroicons/react/outline";
 import { motion } from "framer-motion";
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 
 export default function Banner() {
@@ -64,7 +64,8 @@ export default function Banner() {
                     <MailIcon className="h-5 w-5 text-secondary/60" />
                   </span>
                   <input
-                    className={`block w-full rounded-full border bg-white py-3 pl-14 pr-10 shadow-sm placeholder:text-sm placeholder:text-secondary/60  sm:text-sm md:w-80 ${
+                    className={`block w-full rounded-full border bg-white py-3 pl-14 pr-10 shadow-sm placeholder:text-sm placeholder:text-secondary/60  sm:text-sm md:w-80 
+                    ${
                       errors.Email
                         ? "border-red-400 text-red-300"
                         : "text-purple-200 border-purple-400"
@@ -96,6 +97,7 @@ export default function Banner() {
             </div>
           </motion.div>
           <motion.div
+            className="order-first lg:order-none"
             initial="hidden"
             animate="visible"
             variants={{
@@ -112,13 +114,11 @@ export default function Banner() {
               },
             }}
           >
-            <div className="order-first lg:order-none">
-              <img
-                src="/images/home.png"
-                alt="ONEDAY home"
-                className="w-60 md:w-5/6 lg:mx-auto lg:w-full"
-              />
-            </div>
+            <img
+              src="/images/home.png"
+              alt="ONEDAY home"
+              className="w-60 md:w-5/6 lg:mx-auto lg:w-full"
+            />
           </motion.div>
         </div>
       </div>

@@ -37,75 +37,75 @@ export default function Services() {
           How It Works
         </h1>
         <div className="mt-10 grid grid-cols-1 gap-10 md:grid-cols-3 lg:grid-cols-5">
-          <div className="relative overflow-hidden rounded-md border border-purple bg-cream">
-            <img
-              src="/services/Illustration-01.svg"
-              alt="Sign up to OneDay"
-              className="h-96 w-full p-10"
-            />
-            <div className="absolute inset-x-0 bottom-0 flex h-full flex-col justify-between p-8 hover:bg-black/10">
+          <div className="rounded-md border border-purple bg-cream transition delay-150 duration-300 ease-in-out hover:-translate-y-6 hover:bg-purple">
+            <div className="inset-x-0 bottom-0 flex h-full flex-col justify-between p-8  text-secondary hover:text-white">
               <h3 className="-mt-6 text-right font-display text-6xl text-secondary/40">
                 01
               </h3>
-              <p className="text-base text-secondary">Sign up to OneDay</p>
+              <img
+                src="/services/Illustration-01.svg"
+                alt="Sign up to OneDay"
+                className="mx-auto w-52"
+              />
+              <p className="text-center text-base">Sign up to OneDay</p>
             </div>
           </div>
-          <div className="relative overflow-hidden rounded-md border border-purple bg-cream">
-            <img
-              src="/services/Illustration-02.svg"
-              alt="Fill in personal information for your trust deed"
-              className="h-96 w-full p-10"
-            />
-            <div className="absolute inset-x-0 bottom-0 flex h-full flex-col justify-between p-8 hover:bg-black/10">
+          <div className="rounded-md border border-purple bg-cream transition delay-150 duration-300 ease-in-out hover:-translate-y-6 hover:bg-purple">
+            <div className="inset-x-0 bottom-0 flex h-full flex-col justify-between p-8 text-secondary hover:text-white">
               <h3 className="-mt-6 text-right font-display text-6xl text-secondary/40">
                 02
               </h3>
-              <p className="text-base text-secondary">
+              <img
+                src="/services/Illustration-02.svg"
+                alt="Fill in personal information for your trust deed"
+                className="mx-auto w-52"
+              />
+              <p className="text-center text-base">
                 Fill in personal information for your trust deed
               </p>
             </div>
           </div>
-          <div className="relative overflow-hidden rounded-md border border-purple bg-cream">
-            <img
-              src="/services/Illustration-03.svg"
-              alt="Trust deed is generated, signed and put on the blockchain"
-              className="h-96 w-full p-10"
-            />
-            <div className="absolute inset-x-0 bottom-0 flex h-full flex-col justify-between p-8 hover:bg-black/10">
+          <div className="rounded-md border border-purple bg-cream transition delay-150 duration-300 ease-in-out hover:-translate-y-6 hover:bg-purple">
+            <div className="inset-x-0 bottom-0 flex h-full flex-col justify-between p-8 text-secondary hover:text-white">
               <h3 className="-mt-6 text-right font-display text-6xl text-secondary/40">
                 03
               </h3>
-              <p className="text-base text-secondary">
+              <img
+                src="/services/Illustration-03.svg"
+                alt="Trust deed is generated, signed and put on the blockchain"
+                className="mx-auto w-52"
+              />
+              <p className="text-center text-base">
                 Trust deed is generated, signed and put on the blockchain
               </p>
             </div>
           </div>
-          <div className="relative overflow-hidden rounded-md border border-purple bg-cream">
-            <img
-              src="/services/Illustration-04.svg"
-              alt="Your vaults are created to store your fiat/digital assets"
-              className="h-96 w-full p-10"
-            />
-            <div className="absolute inset-x-0 bottom-0 flex h-full flex-col justify-between p-8 hover:bg-black/10">
+          <div className="rounded-md border border-purple bg-cream  transition delay-150 duration-300 ease-in-out hover:-translate-y-6 hover:bg-purple">
+            <div className="inset-x-0 bottom-0 flex h-full flex-col justify-between p-8 text-secondary hover:text-white">
               <h3 className="-mt-6 text-right font-display text-6xl text-secondary/40">
                 04
               </h3>
-              <p className="text-base text-secondary">
+              <img
+                src="/services/Illustration-04.svg"
+                alt="Your vaults are created to store your fiat/digital assets"
+                className="mx-auto w-52"
+              />
+              <p className="text-center text-base">
                 Your vaults are created to store your fiat/digital assets
               </p>
             </div>
           </div>
-          <div className="relative overflow-hidden rounded-md border border-purple bg-cream">
-            <img
-              src="/services/Illustration-05.svg"
-              alt="Send assets to your dedicated vault"
-              className="h-96 w-full p-10"
-            />
-            <div className="absolute inset-x-0 bottom-0 flex h-full flex-col justify-between p-8 hover:bg-black/10">
+          <div className="rounded-md border border-purple bg-cream transition delay-150 duration-300 ease-in-out hover:-translate-y-6 hover:bg-purple">
+            <div className="inset-x-0 bottom-0 flex h-full flex-col justify-between p-8 text-secondary hover:text-white">
               <h3 className="-mt-6 text-right font-display text-6xl text-secondary/40">
                 05
               </h3>
-              <p className="text-lg text-secondary">
+              <img
+                src="/services/Illustration-05.svg"
+                alt="Send assets to your dedicated vault"
+                className="mx-auto w-52"
+              />
+              <p className="text-center text-base">
                 Send assets to your dedicated vault
               </p>
             </div>
@@ -118,7 +118,7 @@ export default function Services() {
             <h1 className="font-display text-3xl font-bold capitalize leading-8 md:text-4xl lg:leading-12">
               We’ll Take Care of the Rest
             </h1>
-            <p className="mt-5 font-sans text-sm leading-7 text-secondary md:text-sm">
+            <p className="mt-5 text-center font-sans text-sm leading-7 text-secondary md:text-sm">
               With unprecendented world issues it is more important now than
               ever to be prepared and make sure your loved ones are protected
               and secured no matter what happens.

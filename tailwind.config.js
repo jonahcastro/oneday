@@ -33,7 +33,9 @@ module.exports = {
         secondary: "#121212",
         cream: "#FFFCF5",
       },
-      backgroundImage: {},
+      backgroundImage: {
+        circular: "url('/svg/contact-bg.svg')",
+      },
       fontFamily: {
         sans: ["Poppins", ...defaultTheme.fontFamily.sans],
         display: ["Playfair Display", ...defaultTheme.fontFamily.sans],

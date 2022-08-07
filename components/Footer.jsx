@@ -17,18 +17,18 @@ export default function Footer() {
             </p>
             <div className="mt-8 flex flex-row gap-4" role="grid">
               <motion.a
-                initial={{ scale: 0, rotate: 0, opacity: 0.5, x: -100 }}
-                animate={{ scale: 1, rotate: 0, opacity: 1, x: 0 }}
-                whileHover={{ scale: 2, rotate: 45 }}
+                initial={{ scale: 0, opacity: 0.5, x: -100 }}
+                animate={{ scale: 1, opacity: 1, x: 0 }}
+                whileHover={{ scale: 2 }}
                 className="h-10 w-10 rounded-xl bg-purple"
                 href="https://linkedin.com"
               >
                 <img src="/socials/linkedin.svg" alt="LinkedIn" />
               </motion.a>
               <motion.a
-                initial={{ scale: 0, rotate: 0, opacity: 0.5, x: -100 }}
-                animate={{ scale: 1, rotate: 0, opacity: 1, x: 0 }}
-                whileHover={{ scale: 2, rotate: 45 }}
+                initial={{ scale: 0, opacity: 0.5, x: -100 }}
+                animate={{ scale: 1, opacity: 1, x: 0 }}
+                whileHover={{ scale: 2 }}
                 className="h-10 w-10 rounded-xl bg-purple"
                 href="https://instagram.com"
               >
@@ -37,7 +37,7 @@ export default function Footer() {
               <motion.a
                 initial={{ scale: 0, rotate: 0, opacity: 0.5, x: -100 }}
                 animate={{ scale: 1, rotate: 0, opacity: 1, x: 0 }}
-                whileHover={{ scale: 2, rotate: 45 }}
+                whileHover={{ scale: 2 }}
                 className="h-10 w-10 rounded-xl bg-purple"
                 href="https://twitter.com"
               >

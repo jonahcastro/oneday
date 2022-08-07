@@ -14,7 +14,7 @@ module.exports = {
       },
       keyframes: true,
       variables: true,
-      safelist: ["html", "body", "a"],
+      safelist: ["html", "body", "a", "text-red-300", "border-red-400"],
     },
     autoprefixer: {},
     "postcss-import": {},
