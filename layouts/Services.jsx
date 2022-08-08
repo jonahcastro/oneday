@@ -118,7 +118,7 @@ export default function Services() {
             <h1 className="font-display text-3xl font-bold capitalize leading-8 md:text-4xl lg:leading-12">
               We’ll Take Care of the Rest
             </h1>
-            <p className="mt-5 text-center font-sans text-sm leading-7 text-secondary md:text-sm">
+            <p className="mt-5 text-left font-sans text-sm leading-7 text-secondary md:text-sm">
               With unprecendented world issues it is more important now than
               ever to be prepared and make sure your loved ones are protected
               and secured no matter what happens.

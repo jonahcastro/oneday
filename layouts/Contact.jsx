@@ -3,8 +3,10 @@ import { MailIcon } from "@heroicons/react/outline";
 import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
 import { useForm } from "react-hook-form";
+import Link from "next/link";
 
 export default function Contact() {
+  const SURVEY_URL = process.env.NEXT_PUBLIC_SURVEY_LINK;
   const easing = [0.455, 0.03, 0.515, 0.955];
   const sectionVariant = {
     visible: { opacity: 1, transition: { duration: 1, ease: easing } },
@@ -55,7 +57,7 @@ export default function Contact() {
       animate={control}
     >
       <div className="container mb-20">
-        <div className="grid items-center justify-center gap-10 rounded-md bg-purple bg-circular bg-cover bg-center bg-no-repeat px-10 py-20 shadow-md md:grid-cols-2">
+        <div className="items-top grid justify-center gap-3 rounded-md bg-purple bg-circular bg-cover bg-center bg-no-repeat px-10 py-20 shadow-md md:grid-cols-2">
           <div className="max-w-md">
             <h1 className="font-display text-3xl font-bold capitalize leading-8 text-white md:text-4xl lg:leading-12">
               Stay Updated
@@ -65,47 +67,45 @@ export default function Contact() {
               newsletters about how trusts work and why estate planning and
               digital is the future.
             </p>
-            <div>
-              <form
-                method="post"
-                onSubmit={handleSubmit(onSubmit)}
-                className="mt-8 flex-none gap-4 lg:flex"
-              >
-                <label className="relative block">
-                  <span className="sr-only">Stay up to date</span>
-                  <span className="absolute inset-y-0 left-0 flex items-center pl-8">
-                    <MailIcon className="h-5 w-5 text-secondary/60" />
-                  </span>
-                  <input
-                    className={`block w-full rounded-full border bg-white py-3 pl-14 pr-0 shadow-sm placeholder:text-sm placeholder:text-secondary/60 sm:text-sm lg:w-80 lg:pr-10 ${
-                      errors.Email
-                        ? "border-red-300 text-red-500"
-                        : "text-purple-200 border-purple-400"
-                    }`}
-                    placeholder="Stay up to date"
-                    type="text"
-                    {...register("Email", {
-                      required: "Email Address is required",
-                      pattern: {
-                        value: /^\S+@\S+$/i,
-                        message: "Invalid email address",
-                      },
-                    })}
-                  />
-                </label>
-                <button className="mt-3 w-full rounded-full border bg-white px-6 py-3 text-base uppercase tracking-wide text-purple hover:bg-purple hover:text-white hover:shadow-md md:w-auto lg:mt-0">
-                  subscribe
-                </button>
-              </form>
-              <span className="mt-2 text-xs font-medium tracking-wide text-lime-500">
-                {!formSuccess ? "" : formSuccess}
-              </span>
-              <span className="mt-2 ml-10 text-xs font-medium tracking-wide text-red-300">
-                {errors.Email?.message}
-              </span>
-            </div>
+            <form
+              method="post"
+              onSubmit={handleSubmit(onSubmit)}
+              className="mt-8 flex-none gap-4 lg:flex"
+            >
+              <label className="relative block">
+                <span className="sr-only">Stay up to date</span>
+                <span className="absolute inset-y-0 left-0 flex items-center pl-8">
+                  <MailIcon className="h-5 w-5 text-secondary/60" />
+                </span>
+                <input
+                  className={`block w-full rounded-full border bg-white py-3 pl-14 pr-0 shadow-sm placeholder:text-sm placeholder:text-secondary/60 sm:text-sm lg:w-80 lg:pr-10 ${
+                    errors.Email
+                      ? "border-red-300 text-red-500"
+                      : "text-purple-200 border-purple-400"
+                  }`}
+                  placeholder="Stay up to date"
+                  type="text"
+                  {...register("Email", {
+                    required: "Email Address is required",
+                    pattern: {
+                      value: /^\S+@\S+$/i,
+                      message: "Invalid email address",
+                    },
+                  })}
+                />
+              </label>
+              <button className="mt-3 w-full rounded-full border bg-white px-6 py-3 text-base uppercase tracking-wide text-purple hover:bg-purple hover:text-white hover:shadow-md md:w-auto lg:mt-0">
+                subscribe
+              </button>
+            </form>
+            <span className="mt-2 text-xs font-medium tracking-wide text-lime-500">
+              {!formSuccess ? "" : formSuccess}
+            </span>
+            <span className="mt-2 ml-10 text-xs font-medium tracking-wide text-red-300">
+              {errors.Email?.message}
+            </span>
           </div>
-          <div className="max-w-sm">
+          <div className="max-w-md">
             <h1 className="font-display text-3xl font-bold capitalize leading-8 text-white md:text-4xl lg:leading-12">
               Help Us Help You
             </h1>
@@ -114,10 +114,12 @@ export default function Contact() {
               product possible. If you have ~5 minutes we would love to get to
               know you and your goals better.
             </p>
-            <div className="mt-8 flex-none gap-4 lg:flex">
-              <button className="mt-5 w-full rounded-md border bg-white px-8 py-4 text-sm uppercase tracking-wide text-purple hover:bg-purple hover:text-white hover:shadow-md md:w-auto">
-                take survey
-              </button>
+            <div className="mt-8">
+              <Link href={SURVEY_URL} target="_blank" rel="noopener noreferrer">
+                <a className="w-full rounded-md border bg-white px-8 py-4 text-sm uppercase tracking-wide text-purple hover:bg-purple hover:text-white hover:shadow-md md:w-auto">
+                  take survey
+                </a>
+              </Link>
             </div>
           </div>
         </div>

@@ -1,8 +1,10 @@
 import { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
+import Link from "next/link";
 
 export default function About() {
+  const SURVEY_URL = process.env.NEXT_PUBLIC_SURVEY_LINK;
   const easing = [0.455, 0.03, 0.515, 0.955];
   const sectionVariant = {
     visible: { opacity: 1, transition: { duration: 1, ease: easing } },
@@ -149,9 +151,11 @@ export default function About() {
               you took our short survey to help us make the best trust product
               possible.
             </p>
-            <button className="mt-5 w-full rounded-md border bg-purple px-8 py-4 text-sm uppercase tracking-wide text-white hover:bg-purple/90 hover:shadow-md md:w-auto">
-              take survey
-            </button>
+            <Link href={SURVEY_URL} target="_blank" rel="noopener noreferrer">
+              <a className="mt-5 inline-block w-full rounded-md border bg-purple px-8 py-4 text-sm uppercase tracking-wide text-white hover:bg-purple/90 hover:shadow-md md:w-auto">
+                take survey
+              </a>
+            </Link>
           </div>
         </div>
       </div>
