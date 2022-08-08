@@ -151,8 +151,12 @@ export default function About() {
               you took our short survey to help us make the best trust product
               possible.
             </p>
-            <Link href={SURVEY_URL} target="_blank" rel="noopener noreferrer">
-              <a className="mt-5 inline-block w-full rounded-md border bg-purple px-8 py-4 text-sm uppercase tracking-wide text-white hover:bg-purple/90 hover:shadow-md md:w-auto">
+            <Link href={SURVEY_URL}>
+              <a
+                className="mt-5 inline-block w-full rounded-md border bg-purple px-8 py-4 text-sm uppercase tracking-wide text-white hover:bg-purple/90 hover:shadow-md md:w-auto"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 take survey
               </a>
             </Link>

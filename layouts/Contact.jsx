@@ -115,8 +115,12 @@ export default function Contact() {
               know you and your goals better.
             </p>
             <div className="mt-10">
-              <Link href={SURVEY_URL} target="_blank" rel="noopener noreferrer">
-                <a className="w-full rounded-md border bg-white px-8 py-4 text-sm uppercase tracking-wide text-purple hover:bg-purple hover:text-white hover:shadow-md md:w-auto">
+              <Link href={SURVEY_URL}>
+                <a
+                  className="w-full rounded-md border bg-white px-8 py-4 text-sm uppercase tracking-wide text-purple hover:bg-purple hover:text-white hover:shadow-md md:w-auto"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   take survey
                 </a>
               </Link>
