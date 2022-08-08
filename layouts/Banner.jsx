@@ -48,7 +48,7 @@ export default function Banner() {
                 Know your loved ones are taken care of. Whatever happens.
               </h1>
 
-              <p className="mt-5 mr-24 font-sans text-sm leading-7 text-secondary/60 lg:pr-20">
+              <p className="mt-5 mr-24 font-sans text-sm leading-7 text-secondary/60 md:text-lg lg:pr-20">
                 Estate planning for the new age. Setup trusts quickly,
                 affordably and securely from the comfort of your own home.
               </p>
