@@ -49,8 +49,9 @@ export default function Banner() {
               </h1>
 
               <p className="mt-5 mr-24 font-sans text-sm leading-7 text-secondary/60 md:text-lg lg:pr-20">
-                Estate planning for the new age. Setup digital asset trusts quickly,
-                affordably and securely from the comfort of your own home.
+                Estate planning for the new age. Setup digital asset trusts
+                quickly, affordably and securely from the comfort of your own
+                home.
               </p>
 
               <form

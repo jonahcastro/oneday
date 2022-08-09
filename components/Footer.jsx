@@ -12,8 +12,9 @@ export default function Footer() {
               alt="Oneday"
             />
             <p className="mt-8 text-sm">
-              Estate planning for the new age. Setup digital asset trusts quickly, affordably
-              and securely from the comfort of your own home.
+              Estate planning for the new age. Setup digital asset trusts
+              quickly, affordably and securely from the comfort of your own
+              home.
             </p>
             <div className="mt-8 flex flex-row gap-4" role="grid">
               {/* <motion.a
