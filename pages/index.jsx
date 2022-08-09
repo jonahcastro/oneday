@@ -13,7 +13,11 @@ export default function Home() {
       <Head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Oneday</title>
+        <meta
+          name="description"
+          content="Estate planning for the new age. Setup digital asset trusts quickly, affordably and securely from the comfort of your own home."
+        />
+        <title>Oneday - Setup Digital Assets Trust Easily &Amp; Securely</title>
         <link rel="icon" href="/images/favicon.png" />
       </Head>
       <Header />
