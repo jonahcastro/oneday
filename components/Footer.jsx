@@ -40,7 +40,7 @@ export default function Footer() {
                 animate={{ scale: 1, rotate: 0, opacity: 1, x: 0 }}
                 whileHover={{ scale: 2 }}
                 className="h-10 w-10 rounded-xl bg-purple"
-                href="mailto:hello@oneday.io"
+                href="mailto:hello@onedaywhen.io"
               >
                 <img src="/socials/email.svg" alt="Email icon" />
               </motion.a>
