@@ -33,28 +33,28 @@ export default function Header() {
                 Home
               </a>
             </Link> */}
-            <Link href="#about">
+            {/* <Link href="#about">
               <a className="hover:text-purple lg:block" role="menuitem">
                 About us
               </a>
-            </Link>
+            </Link> */}
             {/* <Link href="#services">
               <a className="hover:text-purple lg:block" role="menuitem">
                 Services
               </a>
             </Link> */}
-            <Link href="#contact">
+            <Link href="mailto:hello@onedaywhen.io" target="_blank">
               <a className="hover:text-purple lg:block" role="menuitem">
-                Contact
+                Contact Us
               </a>
             </Link>
           </div>
         </nav>
-        <div className="hidden items-center space-x-2 font-semibold lg:flex lg:space-x-4">
+        {/* <div className="hidden items-center space-x-2 font-semibold lg:flex lg:space-x-4">
           <button className="rounded-full border border-purple px-6 py-3 uppercase tracking-wide text-purple hover:bg-purple hover:text-white">
             Login
           </button>
-        </div>
+        </div> */}
         <button className="lg:hidden" id="mobile-nav-button">
           <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24">
             <path
@@ -105,14 +105,14 @@ export default function Header() {
               Home
             </a>
           </Link> */}
-          <Link href="#about">
+          {/* <Link href="#about">
             <a
               className="-mx-3 block rounded-lg px-3 py-2 hover:bg-purple/5"
               role="menuitem"
             >
               About Us
             </a>
-          </Link>
+          </Link> */}
           {/* <Link href="#services">
             <a
               className="-mx-3 block rounded-lg px-3 py-2 hover:bg-purple/5"
@@ -121,17 +121,17 @@ export default function Header() {
               Services
             </a>
           </Link> */}
-          <Link href="#contact">
+          <Link href="mailto:hello@onedaywhen.io" target="_blank">
             <a
               className="-mx-3 block rounded-lg px-3 py-2 hover:bg-purple/5"
               role="menuitem"
             >
-              Contact
+              Contact Us
             </a>
           </Link>
-          <button className="mt-5 w-full rounded-full border border-purple px-6 py-2 uppercase tracking-wide text-purple">
+          {/* <button className="mt-5 w-full rounded-full border border-purple px-6 py-2 uppercase tracking-wide text-purple">
             Login
-          </button>
+          </button> */}
         </nav>
       </div>
       <div

@@ -40,9 +40,9 @@ export default function Footer() {
                 animate={{ scale: 1, rotate: 0, opacity: 1, x: 0 }}
                 whileHover={{ scale: 2 }}
                 className="h-10 w-10 rounded-xl bg-purple"
-                href="https://twitter.com"
+                href="mailto:hello@oneday.io"
               >
-                <img src="/socials/twitter.svg" alt="Twitter" />
+                <img src="/socials/email.svg" alt="Email icon" />
               </motion.a>
             </div>
           </div>
@@ -78,7 +78,7 @@ export default function Footer() {
                 </a>
               </div>
             </nav> */}
-            <nav aria-label="Blog and Resources">
+            {/* <nav aria-label="Blog and Resources">
               <div className="text-primary-300 font-display text-xl capitalize tracking-wide">
                 Blog and Resources
               </div>
@@ -95,7 +95,7 @@ export default function Footer() {
                 >
                   FAQ
                 </a>
-                {/* <a
+                <a
                   className="text-base capitalize tracking-wide text-white/70 underline-offset-4 hover:underline"
                   href="#"
                 >
@@ -106,10 +106,10 @@ export default function Footer() {
                   href="#"
                 >
                   Anything
-                </a> */}
+                </a>
               </div>
-            </nav>
-            <nav aria-label="Our Company">
+            </nav> */}
+            {/* <nav aria-label="Our Company">
               <div className="text-primary-300 font-display text-xl capitalize tracking-wide">
                 Our Company
               </div>
@@ -120,7 +120,7 @@ export default function Footer() {
                 >
                   About Us
                 </a>
-                {/* <a
+                <a
                   className="text-base capitalize tracking-wide text-white/70 underline-offset-4 hover:underline"
                   href="#"
                 >
@@ -131,15 +131,15 @@ export default function Footer() {
                   href="#"
                 >
                   Careers
-                </a> */}
+                </a>
                 <a
                   className="text-base capitalize tracking-wide text-white/70 underline-offset-4 hover:underline"
-                  href="#"
+                  href="mailto:hello@onedaywhen.io" target="_blank"
                 >
                   Contact Us
                 </a>
               </div>
-            </nav>
+            </nav> */}
           </div>
         </div>
       </div>
