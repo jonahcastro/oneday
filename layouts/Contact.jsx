@@ -111,7 +111,7 @@ export default function Contact() {
             </h1>
             <p className="mt-5 font-sans text-sm leading-7 text-white md:text-sm">
               We would really appreciate your input to help us make the best
-              product possible. If you have ~5 minutes we would love to get to
+              digital asset trust product possible. If you have ~5 minutes we would love to get to
               know you and your goals better.
             </p>
             <div className="mt-10">

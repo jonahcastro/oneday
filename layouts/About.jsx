@@ -52,7 +52,7 @@ export default function About() {
                   />
                 </div>
                 <h3 className="mt-5 font-display text-sm font-medium tracking-tight md:text-lg">
-                  Near instant liquidityfor your loved ones
+                  Near instant liquidity for your loved ones
                 </h3>
               </motion.div>
               <motion.div
@@ -148,7 +148,7 @@ export default function About() {
 
             <p className="mt-10 font-sans text-sm leading-7 text-secondary/60 md:text-lg">
               If you have ~5 minutes to spare, we would really appreciate it if
-              you took our short survey to help us make the best trust product
+              you took our short survey to help us make the best digital asset trust product
               possible.
             </p>
             <Link href={SURVEY_URL}>

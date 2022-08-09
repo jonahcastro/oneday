@@ -12,11 +12,11 @@ export default function Footer() {
               alt="Oneday"
             />
             <p className="mt-8 text-sm">
-              Estate planning for the new age. Setup trusts quickly, affordably
+              Estate planning for the new age. Setup digital asset trusts quickly, affordably
               and securely from the comfort of your own home.
             </p>
             <div className="mt-8 flex flex-row gap-4" role="grid">
-              <motion.a
+              {/* <motion.a
                 initial={{ scale: 0, opacity: 0.5, x: -100 }}
                 animate={{ scale: 1, opacity: 1, x: 0 }}
                 whileHover={{ scale: 2 }}
@@ -33,7 +33,7 @@ export default function Footer() {
                 href="https://instagram.com"
               >
                 <img src="/socials/instagram.svg" alt="Instagram" />
-              </motion.a>
+              </motion.a> */}
               <motion.a
                 initial={{ scale: 0, rotate: 0, opacity: 0.5, x: -100 }}
                 animate={{ scale: 1, rotate: 0, opacity: 1, x: 0 }}
@@ -46,7 +46,7 @@ export default function Footer() {
             </div>
           </div>
           <div className="flex flex-col items-start gap-8 md:flex-row lg:gap-24">
-            <nav aria-label="Our Products">
+            {/* <nav aria-label="Our Products">
               <div className="text-primary-300 font-display text-xl capitalize tracking-wide">
                 Our Products
               </div>
@@ -76,7 +76,7 @@ export default function Footer() {
                   Your Best Product
                 </a>
               </div>
-            </nav>
+            </nav> */}
             <nav aria-label="Blog and Resources">
               <div className="text-primary-300 font-display text-xl capitalize tracking-wide">
                 Blog and Resources
@@ -92,9 +92,9 @@ export default function Footer() {
                   className="text-base capitalize tracking-wide text-white/70 underline-offset-4 hover:underline"
                   href="#"
                 >
-                  Resources Center
+                  FAQ
                 </a>
-                <a
+                {/* <a
                   className="text-base capitalize tracking-wide text-white/70 underline-offset-4 hover:underline"
                   href="#"
                 >
@@ -105,7 +105,7 @@ export default function Footer() {
                   href="#"
                 >
                   Anything
-                </a>
+                </a> */}
               </div>
             </nav>
             <nav aria-label="Our Company">
@@ -119,7 +119,7 @@ export default function Footer() {
                 >
                   About Us
                 </a>
-                <a
+                {/* <a
                   className="text-base capitalize tracking-wide text-white/70 underline-offset-4 hover:underline"
                   href="#"
                 >
@@ -130,7 +130,7 @@ export default function Footer() {
                   href="#"
                 >
                   Careers
-                </a>
+                </a> */}
                 <a
                   className="text-base capitalize tracking-wide text-white/70 underline-offset-4 hover:underline"
                   href="#"
@@ -143,7 +143,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="mx-16 border-t border-t-white/50 py-8 text-center lg:mx-24">
-        <p>All Right Reserved 2022, One Day.</p>
+        <p>All Right Reserved 2022, OneDay.</p>
       </div>
     </footer>
   );
