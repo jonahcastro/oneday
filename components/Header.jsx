@@ -28,24 +28,24 @@ export default function Header() {
         </Link>
         <nav className="" role="menu" aria-label="Main Menu">
           <div className="hidden font-sans font-bold uppercase tracking-wide text-secondary/80 lg:flex lg:items-center lg:gap-x-16 lg:py-10">
-            <Link href="/">
+            {/* <Link href="/">
               <a className="hover:text-purple lg:block" role="menuitem">
                 Home
               </a>
-            </Link>
+            </Link> */}
             <Link href="#about">
               <a className="hover:text-purple lg:block" role="menuitem">
                 About us
               </a>
             </Link>
-            <Link href="#services">
+            {/* <Link href="#services">
               <a className="hover:text-purple lg:block" role="menuitem">
                 Services
               </a>
-            </Link>
+            </Link> */}
             <Link href="#contact">
               <a className="hover:text-purple lg:block" role="menuitem">
-                Contact Us
+                Contact
               </a>
             </Link>
           </div>
@@ -97,14 +97,14 @@ export default function Header() {
           className="space-y-1text-secondary/80 mt-6 text-center uppercase tracking-wide"
           aria-label="Mobile navigation"
         >
-          <Link href="/">
+          {/* <Link href="/">
             <a
               className="-mx-3 block rounded-lg bg-purple/5 px-3 py-2"
               role="menuitem"
             >
               Home
             </a>
-          </Link>
+          </Link> */}
           <Link href="#about">
             <a
               className="-mx-3 block rounded-lg px-3 py-2 hover:bg-purple/5"
@@ -113,20 +113,20 @@ export default function Header() {
               About Us
             </a>
           </Link>
-          <Link href="#services">
+          {/* <Link href="#services">
             <a
               className="-mx-3 block rounded-lg px-3 py-2 hover:bg-purple/5"
               role="menuitem"
             >
               Services
             </a>
-          </Link>
+          </Link> */}
           <Link href="#contact">
             <a
               className="-mx-3 block rounded-lg px-3 py-2 hover:bg-purple/5"
               role="menuitem"
             >
-              Contact Us
+              Contact
             </a>
           </Link>
           <button className="mt-5 w-full rounded-full border border-purple px-6 py-2 uppercase tracking-wide text-purple">
