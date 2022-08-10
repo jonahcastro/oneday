@@ -6,7 +6,6 @@ import About from "../layouts/About";
 import Services from "../layouts/Services";
 import Contact from "../layouts/Contact";
 import Footer from "../components/Footer";
-import scriptTag from "../scripts/scriptTag";
 
 export default function Home() {
   return (
@@ -22,7 +21,6 @@ export default function Home() {
         <link rel="icon" href="/images/favicon.png" />
       </Head>
       <Header />
-      <script async src={scriptTag} />
       <main>
         <Banner />
         <About />
