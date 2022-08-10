@@ -15,7 +15,7 @@ const fnAPI = (req, res) => {
         email: body.Email,
       },
     ],
-    templateId: 3,
+    templateId: 2,
   };
 
   apiInstance.sendTransacEmail(sendSmtpEmail).then(
