@@ -52,17 +52,18 @@ export default function Contact() {
     <motion.section
       id="contact"
       ref={ref}
+      className="bg-cream pb-20"
       variants={sectionVariant}
       initial="hidden"
       animate={control}
     >
-      <div className="container mb-20">
+      <div className="container">
         <div className="items-top grid justify-center gap-3 rounded-md bg-purple bg-circular bg-cover bg-center bg-no-repeat px-10 py-20 shadow-md md:grid-cols-2">
           <div className="max-w-md">
             <h1 className="font-display text-3xl font-bold capitalize leading-8 text-white md:text-4xl lg:leading-12">
               Stay Updated
             </h1>
-            <p className="mt-5 font-sans text-sm leading-7 text-white md:text-sm">
+            <p className="mt-5 font-sans text-sm leading-7 text-white md:text-lg">
               Be the first to know when we launch and receive monthly
               newsletters about how trusts work and why estate planning and
               digital is the future.
@@ -109,7 +110,7 @@ export default function Contact() {
             <h1 className="font-display text-3xl font-bold capitalize leading-8 text-white md:text-4xl lg:leading-12">
               Help Us Help You
             </h1>
-            <p className="mt-5 font-sans text-sm leading-7 text-white md:text-sm">
+            <p className="mt-5 font-sans text-sm leading-7 text-white md:text-lg">
               We would really appreciate your input to help us make the best
               digital asset trust product possible. If you have ~5 minutes we
               would love to get to know you and your goals better.
@@ -117,7 +118,7 @@ export default function Contact() {
             <div className="mt-10">
               <Link href={SURVEY_URL}>
                 <a
-                  className="w-full rounded-md border bg-white px-8 py-4 text-sm uppercase tracking-wide text-purple hover:bg-purple hover:text-white hover:shadow-md md:w-auto"
+                  className="w-full rounded-md border bg-white px-8 py-4 text-sm uppercase tracking-wide text-secondary drop-shadow-md hover:bg-purple hover:text-white hover:shadow-md md:w-auto"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

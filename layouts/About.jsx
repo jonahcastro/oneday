@@ -24,143 +24,154 @@ export default function About() {
   return (
     <motion.section
       id="about"
-      className="bg-cream"
       ref={ref}
+      className="container"
       variants={sectionVariant}
       initial="hidden"
       animate={control}
     >
-      <img
-        className="absolute mt-[28rem] block select-none md:w-1/3 lg:my-20 lg:w-96 3xl:mt-20"
-        src="/svg/about-bg.svg"
-        alt="Circular lines"
-      />
-      <div className="container py-10 lg:py-40">
-        <div className="grid grid-cols-1 items-center justify-center gap-24 lg:grid-cols-3">
-          <div className="lg:col-span-2" role="gridcell">
-            <div className="grid grid-cols-2 grid-rows-3 gap-6 md:grid-cols-3 md:grid-rows-2 lg:gap-12">
-              <motion.div
-                className="rounded bg-white p-5 shadow-xl ring-1 ring-secondary/5 drop-shadow-sm md:drop-shadow-md"
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
-              >
-                <div>
-                  <img
-                    src="/svg/Liquidity.svg"
-                    alt="Liquidity"
-                    className="h-12 w-12"
-                  />
-                </div>
-                <h3 className="mt-5 font-display text-sm font-medium tracking-tight md:text-lg">
-                  Near instant liquidity for your loved ones
-                </h3>
-              </motion.div>
-              <motion.div
-                className="rounded bg-white p-5 shadow-xl ring-1 ring-secondary/5 drop-shadow-sm md:drop-shadow-md"
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
-              >
-                <div>
-                  <img
-                    src="/svg/Avoidance of Probate.svg"
-                    alt="Avoidance of Probate"
-                    className="h-12 w-12"
-                  />
-                </div>
-                <h3 className="mt-5 font-display text-sm font-medium tracking-tight md:text-lg">
-                  Avoidance of probate
-                </h3>
-              </motion.div>
-              <motion.div
-                className="rounded bg-white p-5 shadow-xl ring-1 ring-secondary/5 drop-shadow-sm md:drop-shadow-md"
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
-              >
-                <div>
-                  <img
-                    src="/svg/Succession Planning.svg"
-                    alt="Succession Planning"
-                    className="h-12 w-12"
-                  />
-                </div>
-                <h3 className="mt-5 font-display text-sm font-medium tracking-tight md:text-lg">
-                  Hassle-free succession planning
-                </h3>
-              </motion.div>
-              <motion.div
-                className="rounded bg-white p-5 shadow-xl ring-1 ring-secondary/5 drop-shadow-sm md:drop-shadow-md"
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
-              >
-                <div>
-                  <img
-                    src="/svg/Asset Protection.svg"
-                    alt="Asset Protection"
-                    className="h-12 w-12"
-                  />
-                </div>
-                <h3 className="mt-5 font-display text-sm font-medium tracking-tight md:text-lg">
-                  Asset Protection
-                </h3>
-              </motion.div>
-              <motion.div
-                className="rounded bg-white p-5 shadow-xl ring-1 ring-secondary/5 drop-shadow-sm md:drop-shadow-md"
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
-              >
-                <div>
-                  <img
-                    src="/svg/Preservation of Assets.svg"
-                    alt="Preservation of assets"
-                    className="h-12 w-12"
-                  />
-                </div>
-                <h3 className="mt-5 font-display text-sm font-medium tracking-tight md:text-lg">
-                  Preservation of assets
-                </h3>
-              </motion.div>
-              <motion.div
-                className="rounded bg-white p-5 shadow-xl ring-1 ring-secondary/5 drop-shadow-sm md:drop-shadow-md"
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
-              >
-                <div>
-                  <img
-                    src="/svg/Tax Planning.svg"
-                    alt="Tax Planning"
-                    className="h-12 w-12"
-                  />
-                </div>
-                <h3 className="mt-5 font-display text-sm font-medium tracking-tight md:text-lg">
-                  Tax Planning
-                </h3>
-              </motion.div>
+      <div className="rounded-md bg-cream py-10 drop-shadow-lg lg:py-20">
+        <div className="mx-5 text-center lg:mx-auto">
+          <h1 className="font-display text-2xl font-bold capitalize leading-8 text-purple md:text-4xl lg:text-5xl lg:leading-12">
+            what can a trust do for you
+          </h1>
+          <p className="mt-3 font-sans text-lg leading-7 text-secondary md:text-2xl">
+            With so much happening in the world, it’s essential to
+            <br />
+            secure your assets for your loved ones and yourself.
+          </p>
+        </div>
+        <div className="mx-5 mt-5 grid grid-cols-1 grid-rows-3 items-center justify-center gap-6 md:grid-cols-2 md:grid-rows-3 lg:mx-10 lg:mt-10 lg:gap-x-44">
+          <motion.div
+            className="flex items-center gap-5 p-5 drop-shadow-sm md:drop-shadow-md"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+          >
+            <div>
+              <img
+                src="/svg/Liquidity.svg"
+                alt="Liquidity"
+                className="h-28 w-28"
+              />
             </div>
-          </div>
-          <div className="order-first lg:order-none" role="gridcell">
-            <h1 className="font-display text-3xl font-bold capitalize leading-8 md:text-4xl lg:leading-12">
-              what can a trust do for you
-            </h1>
-            <p className="mt-5 font-sans text-sm leading-7 text-secondary/60 md:text-lg">
-              With so much happening in the world, it’s important to plan ahead
-              for the future of you and your loved ones.
-            </p>
-
-            <p className="mt-10 font-sans text-sm leading-7 text-secondary/60 md:text-lg">
-              If you have ~5 minutes to spare, we would really appreciate it if
-              you took our short survey to help us make the best digital asset
-              trust product possible.
-            </p>
-            <Link href={SURVEY_URL}>
-              <a
-                className="mt-5 inline-block w-full rounded-md border bg-purple px-8 py-4 text-sm uppercase tracking-wide text-white hover:bg-purple/90 hover:shadow-md md:w-auto"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                take survey
-              </a>
-            </Link>
-          </div>
+            <div className="grid-rows grid">
+              <h3 className="mt-5 font-display text-sm tracking-tight text-purple md:text-lg">
+                Near Instant Liquidity
+              </h3>
+              <p className="mt-3 font-sans text-lg leading-7 text-secondary">
+                Readily available liquidity for your beneficiaries.
+              </p>
+            </div>
+          </motion.div>
+          <motion.div
+            className="flex items-center gap-5 p-5 drop-shadow-sm md:drop-shadow-md"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+          >
+            <div>
+              <img
+                src="/svg/Avoidance of Probate.svg"
+                alt="Avoidance of Probate"
+                className="h-28 w-28"
+              />
+            </div>
+            <div className="grid-rows grid">
+              <h3 className="mt-5 font-display text-sm tracking-tight text-purple md:text-lg">
+                Avoidance of Probate
+              </h3>
+              <p className="mt-3 font-sans text-lg leading-7 text-secondary">
+                Avoid the lengthy process of probate associated with traditional
+                wills.
+              </p>
+            </div>
+          </motion.div>
+          <motion.div
+            className="flex items-center gap-5 p-5 drop-shadow-sm md:drop-shadow-md"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+          >
+            <div>
+              <img
+                src="/svg/Asset Protection.svg"
+                alt="Asset Protection"
+                className="h-28 w-28"
+              />
+            </div>
+            <div className="grid-rows grid">
+              <h3 className="mt-5 font-display text-sm tracking-tight text-purple md:text-lg">
+                Asset Protection
+              </h3>
+              <p className="mt-3 font-sans text-lg leading-7 text-secondary">
+                Only your designated beneficiaries will have access to your
+                assets.
+              </p>
+            </div>
+          </motion.div>
+          <motion.div
+            className="flex items-center gap-5 p-5 drop-shadow-sm md:drop-shadow-md"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+          >
+            <div>
+              <img
+                src="/svg/Succession Planning.svg"
+                alt="Succession Planning"
+                className="h-28 w-28"
+              />
+            </div>
+            <div className="grid-rows grid">
+              <h3 className="mt-5 font-display text-sm tracking-tight text-purple md:text-lg">
+                Succession Planning
+              </h3>
+              <p className="mt-3 font-sans text-lg leading-7 text-secondary">
+                Plan ahead for your loved ones, on your terms, and be
+                stress-free.
+              </p>
+            </div>
+          </motion.div>
+          <motion.div
+            className="flex items-center gap-5 p-5 drop-shadow-sm md:drop-shadow-md"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+          >
+            <div>
+              <img
+                src="/svg/Preservation of Assets.svg"
+                alt="Preservation of assets"
+                className="h-40 w-40"
+              />
+            </div>
+            <div className="grid-rows grid">
+              <h3 className="mt-5 font-display text-sm tracking-tight text-purple md:text-lg">
+                Preservation of Assets
+              </h3>
+              <p className="mt-3 font-sans text-lg leading-7 text-secondary">
+                OneDay as your licensed trustee, along with regulated custodians
+                will take care of your assets.
+              </p>
+            </div>
+          </motion.div>
+          <motion.div
+            className="flex items-center gap-5 p-5 drop-shadow-sm md:drop-shadow-md"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+          >
+            <div>
+              <img
+                src="/svg/Tax Planning.svg"
+                alt="Tax Planning"
+                className="h-28 w-24"
+              />
+            </div>
+            <div className="grid-rows grid">
+              <h3 className="mt-5 font-display text-sm tracking-tight text-purple md:text-lg">
+                Tax Planning
+              </h3>
+              <p className="mt-3 font-sans text-lg leading-7 text-secondary">
+                Lighten the tax burden of your beneficiaries.
+              </p>
+            </div>
+          </motion.div>
         </div>
       </div>
     </motion.section>

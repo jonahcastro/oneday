@@ -11,7 +11,7 @@ export default function Footer() {
               src="/images/oneday-logotype-alt.svg"
               alt="Oneday"
             />
-            <p className="mt-8 text-sm">
+            <p className="text-md mt-8">
               Estate planning for the new age. Setup digital asset trusts
               quickly, affordably and securely from the comfort of your own
               home.

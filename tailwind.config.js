@@ -21,12 +21,12 @@ module.exports = {
       padding: {
         sm: "1rem",
         md: "2rem",
-        lg: "3rem",
+        lg: "4rem",
       },
     },
     extend: {
       lineHeight: {
-        12: "4rem",
+        12: "4.3rem",
       },
       colors: {
         purple: "#304E86",
@@ -37,8 +37,8 @@ module.exports = {
         circular: "url('/svg/contact-bg.svg')",
       },
       fontFamily: {
-        sans: ["Poppins", ...defaultTheme.fontFamily.sans],
-        display: ["Playfair Display", ...defaultTheme.fontFamily.sans],
+        sans: ["Source Sans Pro", ...defaultTheme.fontFamily.sans],
+        display: ["PT Serif", ...defaultTheme.fontFamily.sans],
       },
     },
   },

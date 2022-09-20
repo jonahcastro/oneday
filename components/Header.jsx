@@ -19,7 +19,7 @@ export default function Header() {
 
   return (
     <header className="relative w-full border-b-2 border-gray-100">
-      <div className="flex items-center justify-between px-10 py-3">
+      <div className="container flex items-center justify-between px-10 py-3">
         <span className="sr-only">oneday</span>
         <Link className="ml-4 py-4 md:py-2 lg:py-0" href="/">
           <a role="button">
@@ -28,21 +28,21 @@ export default function Header() {
         </Link>
         <nav className="" role="menu" aria-label="Main Menu">
           <div className="hidden font-sans font-bold uppercase tracking-wide text-secondary/80 lg:flex lg:items-center lg:gap-x-16 lg:py-10">
-            {/* <Link href="/">
+            <Link href="/">
               <a className="hover:text-purple lg:block" role="menuitem">
                 Home
               </a>
-            </Link> */}
-            {/* <Link href="#about">
+            </Link>
+            <Link href="#about">
               <a className="hover:text-purple lg:block" role="menuitem">
                 About us
               </a>
-            </Link> */}
-            {/* <Link href="#services">
+            </Link>
+            <Link href="#services">
               <a className="hover:text-purple lg:block" role="menuitem">
                 Services
               </a>
-            </Link> */}
+            </Link>
             <Link href="mailto:hello@onedaywhen.io" target="_blank">
               <a className="hover:text-purple lg:block" role="menuitem">
                 Contact Us
@@ -50,11 +50,11 @@ export default function Header() {
             </Link>
           </div>
         </nav>
-        {/* <div className="hidden items-center space-x-2 font-semibold lg:flex lg:space-x-4">
+        <div className="hidden items-center space-x-2 font-semibold lg:flex lg:space-x-4">
           <button className="rounded-full border border-purple px-6 py-3 uppercase tracking-wide text-purple hover:bg-purple hover:text-white">
             Login
           </button>
-        </div> */}
+        </div>
         <button className="lg:hidden" id="mobile-nav-button">
           <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24">
             <path

@@ -22,21 +22,17 @@ export default function Services() {
   return (
     <motion.section
       id="services"
+      className="mt-20 bg-cream lg:mt-40"
       ref={ref}
       variants={sectionVariant}
       initial="hidden"
       animate={control}
     >
-      <img
-        className="absolute -z-10 block w-full"
-        src="/svg/triangle.svg"
-        alt="Traingle Background"
-      />
       <div className="container pt-20 pb-10 md:pt-40">
-        <h1 className="font-display text-3xl font-bold capitalize leading-8 md:text-4xl lg:leading-12">
+        <h1 className="text-center font-display text-3xl font-bold capitalize leading-8 text-purple md:text-4xl lg:text-5xl lg:leading-12">
           How It Works
         </h1>
-        <div className="mt-10 grid grid-cols-1 gap-10 md:grid-cols-3 lg:grid-cols-5">
+        {/*<div className="mt-10 grid grid-cols-1 gap-10 md:grid-cols-3 lg:grid-cols-5">
           <div className="rounded-md border border-purple bg-cream transition delay-150 duration-300 ease-in-out hover:-translate-y-6 hover:bg-purple">
             <div className="inset-x-0 bottom-0 flex h-full flex-col justify-between p-8  text-secondary hover:text-white">
               <h3 className="-mt-6 text-right font-display text-6xl text-secondary/40">
@@ -110,19 +106,104 @@ export default function Services() {
               </p>
             </div>
           </div>
-        </div>
-
-        <div className="mt-20 grid items-center justify-center rounded-md bg-cream p-10 shadow-md md:grid-cols-2 md:p-12 lg:px-20">
-          <img src="/svg/dream.svg" alt="Dream" />
-          <div>
-            <h1 className="font-display text-3xl font-bold capitalize leading-8 md:text-4xl lg:leading-12">
-              We’ll Take Care of the Rest
-            </h1>
-            <p className="mt-5 text-left font-sans text-sm leading-7 text-secondary/60 md:text-lg">
-              With unprecendented world issues it is more important now than
-              ever to be prepared and make sure your loved ones are protected
-              and secured no matter what happens.
-            </p>
+        </div>*/}
+        <div className="mt-3 grid grid-rows-4 items-start justify-center gap-5 p-10 md:p-12 lg:mt-10 lg:items-center lg:gap-10 lg:px-20">
+          <div
+            className="grid grid-cols-1 gap-10 md:grid-cols-2"
+            role="gridcell"
+          >
+            <img
+              src="/services/Illustration-02.svg"
+              alt="VETTED &amp; APPROVED"
+              className="mx-auto w-64 drop-shadow-lg transition delay-150 duration-300 ease-in-out hover:-translate-y-6"
+            />
+            <div className="order-first">
+              <h1 className="font-display text-xl font-bold uppercase leading-8 text-purple md:text-2xl">
+                VETTED &amp; APPROVED
+              </h1>
+              <p className="font-display text-xl font-bold text-purple md:text-2xl">
+                Trust Deeds
+              </p>
+              <p className="mt-5 text-left font-sans text-sm leading-7 text-secondary md:text-lg">
+                Fill in personal and beneficiary detail and your wishes for your
+                trust deed, our trust deeds have been vetted by our law firm
+                partners for the jurisdictions we currently serve.
+              </p>
+            </div>
+          </div>
+          <div
+            className="grid grid-cols-1 gap-10 md:grid-cols-2"
+            role="gridcell"
+          >
+            <img
+              src="/services/Illustration-03.svg"
+              alt="PRIVATE YET ACCESSIBLE"
+              className="mx-auto w-64 drop-shadow-lg transition delay-150 duration-300 ease-in-out hover:-translate-y-6"
+            />
+            <div className="order-first">
+              <h1 className="font-display text-xl font-bold uppercase leading-8 text-purple md:text-2xl">
+                PRIVATE YET ACCESSIBLE
+              </h1>
+              <p className="font-display text-xl font-bold text-purple md:text-2xl">
+                On the blockchain
+              </p>
+              <p className="mt-5 text-left font-sans text-sm leading-7 text-secondary md:text-lg">
+                A hard copy of your trust deed can be downloaded from our
+                platform for wet signing. OneDay will arrange for the collection
+                and execution of your trust deed.
+              </p>
+              <p className="mt-5 text-left font-sans text-sm leading-7 text-secondary md:text-lg">
+                An encrypted NFT of your trust deed is then generated and put on
+                the blockchain. - an immutable master copy can now be
+                referenced.
+              </p>
+            </div>
+          </div>
+          <div
+            className="grid grid-cols-1 gap-10 md:grid-cols-2"
+            role="gridcell"
+          >
+            <img
+              src="/services/Illustration-06.svg"
+              alt="PEACE OF MIND"
+              className="w-50 mx-auto drop-shadow-lg transition delay-150 duration-300 ease-in-out hover:-translate-y-6"
+            />
+            <div className="order-first">
+              <h1 className="font-display text-xl font-bold uppercase leading-8 text-purple md:text-2xl">
+                PEACE OF MIND
+              </h1>
+              <p className="font-display text-xl font-bold text-purple md:text-2xl">
+                Licensed and Insured Financial Institutions & Custodians
+              </p>
+              <p className="mt-5 text-left font-sans text-sm leading-7 text-secondary md:text-lg">
+                Upon OneDay's receipt of your assets (
+                <span className="font-bold">
+                  currencies, stablecoins, and other digital assets
+                </span>{" "}
+                ), your trust will be established.
+              </p>
+              <p className="mt-5 text-left font-sans text-sm leading-7 text-secondary md:text-lg">
+                OneDay works with the world's leading financial institutions and
+                custodians to secure your assets, accessible directly from our
+                platform.
+              </p>
+            </div>
+          </div>
+          <div
+            className="grid grid-cols-1 gap-10 md:grid-cols-2"
+            role="gridcell"
+          >
+            <img src="/svg/dream.svg" alt="Dream" className="w-3/4" />
+            <div className="order-first mt-10 md:mt-0">
+              <h1 className="font-display text-3xl font-bold capitalize leading-8 text-purple md:text-4xl lg:leading-12">
+                We’ll Take Care of The Rest.
+              </h1>
+              <p className="mt-5 text-left font-sans text-sm leading-7 text-secondary md:text-lg">
+                In case anything happens to you, OneDay will work with your
+                beneficiaries and distribute your assets to them in the most
+                efficient manner possible.
+              </p>
+            </div>
           </div>
         </div>
       </div>
