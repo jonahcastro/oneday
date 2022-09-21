@@ -7,21 +7,24 @@ module.exports = {
     "./pages/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    minWidth: {
+      xs: '20rem',
+    },
     screens: {
       xxs: "320px",
       sm: "480px",
       md: "768px",
       lg: "976px",
       xl: "1440px",
-      "2xl": "1536px",
-      "3xl": "1900px",
+      "2xl": "2000px",
+      "3xl": "2500px",
     },
     container: {
       center: true,
       padding: {
         sm: "1rem",
         md: "2rem",
-        lg: "4rem",
+        lg: "10rem",
       },
     },
     extend: {

@@ -18,8 +18,8 @@ export default function Header() {
   }, []);
 
   return (
-    <header className="relative w-full border-b-2 border-gray-100">
-      <div className="container flex items-center justify-between px-10 py-3">
+    <header className="flex bg-white fixed top-0 w-full text-white z-50 border-b-2 border-gray-100">
+      <div className="container bg-white flex items-center justify-between px-10 py-3">
         <span className="sr-only">oneday</span>
         <Link className="ml-4 py-4 md:py-2 lg:py-0" href="/">
           <a role="button">

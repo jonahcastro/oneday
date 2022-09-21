@@ -25,7 +25,7 @@ export default function About() {
     <motion.section
       id="about"
       ref={ref}
-      className="container"
+      className="px-10 lg:px-40"
       variants={sectionVariant}
       initial="hidden"
       animate={control}
