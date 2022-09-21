@@ -57,7 +57,7 @@ export default function Contact() {
       initial="hidden"
       animate={control}
     >
-      <div className="container">
+      <div className="px-10 lg:px-40">
         <div className="items-top grid justify-center gap-3 rounded-md bg-purple bg-circular bg-cover bg-center bg-no-repeat px-10 py-20 shadow-md md:grid-cols-2">
           <div className="max-w-md">
             <h1 className="font-display text-3xl font-bold capitalize leading-8 text-white md:text-4xl lg:leading-12">
