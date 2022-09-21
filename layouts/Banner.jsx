@@ -29,7 +29,7 @@ export default function Banner() {
   }
 
   return (
-    <section className="mt-52">
+    <section className="container mt-28 lg:mt-52">
       <div className="my-10 h-96 md:my-24">
         <div className="mx-auto flex max-w-3xl text-center">
           <motion.div

@@ -18,58 +18,60 @@ export default function Header() {
   }, []);
 
   return (
-    <header className="flex bg-white fixed top-0 w-full text-white z-50 border-b-2 border-gray-100">
-      <div className="container bg-white flex items-center justify-between px-10 py-3">
-        <span className="sr-only">oneday</span>
-        <Link className="ml-4 py-4 md:py-2 lg:py-0" href="/">
-          <a role="button">
-            <img src="/images/oneday-logotype.svg" alt="Logo" />
-          </a>
-        </Link>
-        <nav className="" role="menu" aria-label="Main Menu">
-          <div className="hidden font-sans font-bold uppercase tracking-wide text-secondary/80 lg:flex lg:items-center lg:gap-x-16 lg:py-10">
-            <Link href="/">
-              <a className="hover:text-purple lg:block" role="menuitem">
-                Home
-              </a>
-            </Link>
-            <Link href="#about">
-              <a className="hover:text-purple lg:block" role="menuitem">
-                About us
-              </a>
-            </Link>
-            <Link href="#services">
-              <a className="hover:text-purple lg:block" role="menuitem">
-                Services
-              </a>
-            </Link>
-            <Link href="mailto:hello@onedaywhen.io" target="_blank">
-              <a className="hover:text-purple lg:block" role="menuitem">
-                Contact Us
-              </a>
-            </Link>
+    <header className="fixed top-0 left-0 right-0 z-50 bg-white border-b-2 border-gray-100">
+      <div className="container">
+        <div className="flex items-center justify-between py-3">
+          <span className="sr-only">oneday</span>
+          <Link className="ml-4 py-4 md:py-2 lg:py-0" href="/">
+            <a role="button">
+              <img src="/images/oneday-logotype.svg" alt="Logo" />
+            </a>
+          </Link>
+          <nav className="" role="menu" aria-label="Main Menu">
+            <div className="hidden font-sans font-bold uppercase tracking-wide text-secondary/80 lg:flex lg:items-center lg:gap-x-16 lg:py-10">
+              <Link href="/">
+                <a className="hover:text-purple lg:block" role="menuitem">
+                  Home
+                </a>
+              </Link>
+              <Link href="#about">
+                <a className="hover:text-purple lg:block" role="menuitem">
+                  About us
+                </a>
+              </Link>
+              <Link href="#services">
+                <a className="hover:text-purple lg:block" role="menuitem">
+                  Services
+                </a>
+              </Link>
+              <Link href="mailto:hello@onedaywhen.io" target="_blank">
+                <a className="hover:text-purple lg:block" role="menuitem">
+                  Contact Us
+                </a>
+              </Link>
+            </div>
+          </nav>
+          <div className="hidden items-center space-x-2 font-semibold lg:flex lg:space-x-4">
+            <button className="rounded-full border border-purple px-6 py-3 uppercase tracking-wide text-purple hover:bg-purple hover:text-white">
+              Login
+            </button>
           </div>
-        </nav>
-        <div className="hidden items-center space-x-2 font-semibold lg:flex lg:space-x-4">
-          <button className="rounded-full border border-purple px-6 py-3 uppercase tracking-wide text-purple hover:bg-purple hover:text-white">
-            Login
+          <button className="lg:hidden" id="mobile-nav-button">
+            <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24">
+              <path
+                stroke="#121212"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M4 18h16M4 6h16H4Zm0 6h16H4Z"
+              />
+            </svg>
           </button>
-        </div>
-        <button className="lg:hidden" id="mobile-nav-button">
-          <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24">
-            <path
-              stroke="#121212"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M4 18h16M4 6h16H4Zm0 6h16H4Z"
-            />
-          </svg>
-        </button>
+          </div>
       </div>
 
       <div
-        className="fixed inset-x-2 top-2 z-20 hidden rounded-xl bg-white p-6 shadow-lg lg:hidden"
+        className="fixed inset-x-2 top-2 z-20 hidden rounded-xl bg-white p-6 shadow-lg md:hidden"
         id="mobile-navigation"
       >
         <div className="flex items-center justify-between">

@@ -107,7 +107,7 @@ export default function Services() {
             </div>
           </div>
         </div>*/}
-        <div className="mt-3 grid grid-rows-4 items-start justify-center gap-5 p-10 md:p-12 lg:mt-10 lg:items-center lg:gap-10">
+        <div className="mt-3 grid items-start justify-center gap-y-10 md:gap-y-20 gap-5 p-10 md:p-12 lg:mt-10 md:items-center lg:gap-10">
           <div
             className="grid justify-between grid-cols-1 gap-12 md:grid-cols-2"
             role="gridcell"
