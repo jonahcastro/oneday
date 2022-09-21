@@ -71,7 +71,7 @@ export default function Header() {
       </div>
 
       <div
-        className="fixed inset-x-2 top-2 z-20 hidden rounded-xl bg-white p-6 shadow-lg md:hidden"
+        className="fixed inset-x-2 top-2 z-20 hidden rounded-xl bg-white p-6 shadow-lg lg:hidden"
         id="mobile-navigation"
       >
         <div className="flex items-center justify-between">
