@@ -39,7 +39,11 @@ export default function Blog() {
           </h1>
           <div className="grid grid-cols-1 gap-8 sm:mx-auto sm:max-w-sm md:mt-10 md:max-w-none md:grid-cols-3 lg:mt-16 lg:max-w-3xl xl:max-w-none">
             <Link href="/blog">
-              <a className="rounded-md bg-cream px-5 pt-8">
+              <motion.a
+                className="rounded-md bg-cream px-5 pt-8"
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+              >
                 <h1 className="my-5 font-display text-lg font-bold leading-8 text-purple md:text-2xl">
                   What is a trust?
                 </h1>
@@ -48,10 +52,14 @@ export default function Blog() {
                   alt="What is a trust"
                   className="w-full"
                 />
-              </a>
+              </motion.a>
             </Link>
             <Link href="/blog">
-              <a className="rounded-md bg-cream px-5 pt-8">
+              <motion.a
+                className="rounded-md bg-cream px-5 pt-8"
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+              >
                 <h1 className="my-5 font-display text-lg font-bold leading-8 text-purple md:text-2xl">
                   Trust or Will
                 </h1>
@@ -60,14 +68,18 @@ export default function Blog() {
                   alt="Trust or Will"
                   className="w-full"
                 />
-              </a>
+              </motion.a>
             </Link>
             <Link href="/blog">
-              <div className="flex h-64 rounded-md bg-cream lg:h-full">
+              <motion.a
+                className="flex h-64 cursor-pointer rounded-md bg-cream lg:h-full"
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+              >
                 <h1 className="m-auto text-center font-display text-lg font-bold leading-8 text-purple md:text-2xl">
                   Why OneDay?
                 </h1>
-              </div>
+              </motion.a>
             </Link>
           </div>
         </div>
