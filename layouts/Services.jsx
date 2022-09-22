@@ -28,7 +28,7 @@ export default function Services() {
       initial="hidden"
       animate={control}
     >
-      <div className="px-10 lg:px-40 pt-20 pb-10 md:pt-40">
+      <div className="px-4 pt-20 pb-10 md:pt-40 lg:px-40">
         <h1 className="text-center font-display text-3xl font-bold capitalize leading-8 text-purple md:text-4xl lg:text-5xl lg:leading-12">
           How It Works
         </h1>
@@ -107,15 +107,15 @@ export default function Services() {
             </div>
           </div>
         </div>*/}
-        <div className="mt-3 grid items-start justify-center gap-y-10 md:gap-y-20 gap-5 p-10 md:p-12 lg:mt-10 md:items-center lg:gap-10">
+        <div className="mt-3 grid items-start justify-center gap-5 gap-y-10 p-5 md:items-center md:gap-y-20 md:p-12 lg:mt-10 lg:gap-10">
           <div
-            className="grid justify-between grid-cols-1 gap-12 md:grid-cols-2"
+            className="grid grid-cols-1 justify-between gap-12 md:grid-cols-2"
             role="gridcell"
           >
             <img
               src="/services/Illustration-02.svg"
               alt="VETTED &amp; APPROVED"
-              className="justify-self-center md:justify-self-end w-64 drop-shadow-lg transition delay-150 duration-300 ease-in-out hover:-translate-y-6"
+              className="w-64 justify-self-center drop-shadow-lg transition delay-150 duration-300 ease-in-out hover:-translate-y-6 md:justify-self-end"
             />
             <div className="order-first">
               <h1 className="font-display text-xl font-bold uppercase leading-8 text-purple md:text-2xl">
@@ -132,13 +132,13 @@ export default function Services() {
             </div>
           </div>
           <div
-            className="grid justify-between grid-cols-1 gap-12 md:grid-cols-2"
+            className="grid grid-cols-1 justify-between gap-12 md:grid-cols-2"
             role="gridcell"
           >
             <img
               src="/services/Illustration-03.svg"
               alt="PRIVATE YET ACCESSIBLE"
-              className="justify-self-center md:justify-self-end w-64 drop-shadow-lg transition delay-150 duration-300 ease-in-out hover:-translate-y-6"
+              className="w-64 justify-self-center drop-shadow-lg transition delay-150 duration-300 ease-in-out hover:-translate-y-6 md:justify-self-end"
             />
             <div className="order-first">
               <h1 className="font-display text-xl font-bold uppercase leading-8 text-purple md:text-2xl">
@@ -160,13 +160,13 @@ export default function Services() {
             </div>
           </div>
           <div
-            className="grid justify-between grid-cols-1 gap-12 md:grid-cols-2"
+            className="grid grid-cols-1 justify-between gap-12 md:grid-cols-2"
             role="gridcell"
           >
             <img
               src="/services/Illustration-06.svg"
               alt="PEACE OF MIND"
-              className="justify-self-center md:justify-self-end w-64 drop-shadow-lg transition delay-150 duration-300 ease-in-out hover:-translate-y-6"
+              className="w-64 justify-self-center drop-shadow-lg transition delay-150 duration-300 ease-in-out hover:-translate-y-6 md:justify-self-end"
             />
             <div className="order-first">
               <h1 className="font-display text-xl font-bold uppercase leading-8 text-purple md:text-2xl">
@@ -190,10 +190,14 @@ export default function Services() {
             </div>
           </div>
           <div
-            className="grid justify-between grid-cols-1 gap-12 md:grid-cols-2"
+            className="grid grid-cols-1 justify-between gap-12 md:grid-cols-2"
             role="gridcell"
           >
-            <img src="/svg/dream.svg" alt="Dream" className="justify-self-center md:justify-self-end w-3/4" />
+            <img
+              src="/svg/dream.svg"
+              alt="Dream"
+              className="w-3/4 justify-self-center md:justify-self-end"
+            />
             <div className="order-first mt-10 md:mt-0">
               <h1 className="font-display text-3xl font-bold capitalize leading-8 text-purple md:text-4xl lg:leading-12">
                 We’ll Take Care of The Rest.

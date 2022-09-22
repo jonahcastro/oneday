@@ -18,7 +18,7 @@ export default function Header() {
   }, []);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white border-b-2 border-gray-100">
+    <header className="fixed top-0 left-0 right-0 z-50 border-b-2 border-gray-100 bg-white">
       <div className="container">
         <div className="flex items-center justify-between py-3">
           <span className="sr-only">oneday</span>
@@ -67,7 +67,7 @@ export default function Header() {
               />
             </svg>
           </button>
-          </div>
+        </div>
       </div>
 
       <div
@@ -99,30 +99,30 @@ export default function Header() {
           className="space-y-1text-secondary/80 mt-6 text-center uppercase tracking-wide"
           aria-label="Mobile navigation"
         >
-          {/* <Link href="/">
+          <Link href="/">
             <a
               className="-mx-3 block rounded-lg bg-purple/5 px-3 py-2"
               role="menuitem"
             >
               Home
             </a>
-          </Link> */}
-          {/* <Link href="#about">
+          </Link>
+          <Link href="#about">
             <a
               className="-mx-3 block rounded-lg px-3 py-2 hover:bg-purple/5"
               role="menuitem"
             >
               About Us
             </a>
-          </Link> */}
-          {/* <Link href="#services">
+          </Link>
+          <Link href="#services">
             <a
               className="-mx-3 block rounded-lg px-3 py-2 hover:bg-purple/5"
               role="menuitem"
             >
               Services
             </a>
-          </Link> */}
+          </Link>
           <Link href="mailto:hello@onedaywhen.io" target="_blank">
             <a
               className="-mx-3 block rounded-lg px-3 py-2 hover:bg-purple/5"
@@ -131,9 +131,9 @@ export default function Header() {
               Contact Us
             </a>
           </Link>
-          {/* <button className="mt-5 w-full rounded-full border border-purple px-6 py-2 uppercase tracking-wide text-purple">
+          <button className="mt-5 w-full rounded-full border border-purple px-6 py-2 uppercase tracking-wide text-purple">
             Login
-          </button> */}
+          </button>
         </nav>
       </div>
       <div

@@ -8,7 +8,7 @@ module.exports = {
   ],
   theme: {
     minWidth: {
-      xs: '20rem',
+      xs: "20rem",
     },
     screens: {
       xxs: "320px",
@@ -25,7 +25,7 @@ module.exports = {
         sm: "1rem",
         md: "2rem",
         lg: "3rem",
-        "3xl": "15rem"
+        "3xl": "15rem",
       },
     },
     extend: {

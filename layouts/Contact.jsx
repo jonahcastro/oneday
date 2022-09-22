@@ -57,8 +57,8 @@ export default function Contact() {
       initial="hidden"
       animate={control}
     >
-      <div className="px-10 lg:px-40">
-        <div className="items-top grid justify-center gap-3 rounded-md bg-purple bg-circular bg-cover bg-center bg-no-repeat px-10 py-20 shadow-md md:grid-cols-2">
+      <div className="px-4 lg:px-40">
+        <div className="items-top grid-col-1 grid justify-center gap-3 rounded-md bg-purple bg-circular bg-cover bg-center bg-no-repeat px-10 py-20 shadow-md md:grid-cols-2">
           <div className="max-w-md">
             <h1 className="font-display text-3xl font-bold capitalize leading-8 text-white md:text-4xl lg:leading-12">
               Stay Updated
@@ -71,7 +71,7 @@ export default function Contact() {
             <form
               method="post"
               onSubmit={handleSubmit(onSubmit)}
-              className="mt-8 flex-none gap-4 lg:flex"
+              className="mt-8 flex flex-col gap-2 xl:flex-row xl:gap-4"
             >
               <label className="relative block">
                 <span className="sr-only">Stay up to date</span>
@@ -79,7 +79,7 @@ export default function Contact() {
                   <MailIcon className="h-5 w-5 text-secondary/60" />
                 </span>
                 <input
-                  className={`block w-full rounded-full border bg-white py-3 pl-14 pr-0 shadow-sm placeholder:text-sm placeholder:text-secondary/60 sm:text-sm lg:w-80 lg:pr-10 ${
+                  className={`block w-full rounded-full border bg-white py-3 pl-14 pr-0 shadow-sm placeholder:text-sm placeholder:text-secondary/60 sm:text-sm lg:pr-10 xl:w-80 ${
                     errors.Email
                       ? "border-red-300 text-red-500"
                       : "text-purple-200 border-purple-400"

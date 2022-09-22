@@ -4,6 +4,7 @@ import Header from "../components/Header";
 import Banner from "../layouts/Banner";
 import About from "../layouts/About";
 import Services from "../layouts/Services";
+import Blog from "../layouts/Blog";
 import Contact from "../layouts/Contact";
 import Footer from "../components/Footer";
 
@@ -25,6 +26,7 @@ export default function Home() {
         <Banner />
         <About />
         <Services />
+        <Blog />
         <Contact />
       </main>
       <Footer />
