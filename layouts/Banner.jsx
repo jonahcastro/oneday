@@ -30,7 +30,7 @@ export default function Banner() {
 
   return (
     <section className="container mt-28 lg:mt-52">
-      <div className="h-80 lg:h-96 mb-10 md:mb-0">
+      <div className="mb-10 h-80 md:mb-0 lg:h-96">
         <div className="mx-auto flex max-w-3xl text-center">
           <motion.div
             initial="hidden"
@@ -65,7 +65,7 @@ export default function Banner() {
                       <MailIcon className="h-5 w-5 text-secondary/60" />
                     </span>
                     <input
-                      className={`block w-full rounded-md border bg-white py-3 pl-14 pr-10 shadow-sm placeholder:text-sm placeholder:text-secondary/60  sm:text-sm md:w-68 xl:w-80 
+                      className={`md:w-68 block w-full rounded-md border bg-white py-3 pl-14 pr-10 shadow-sm placeholder:text-sm  placeholder:text-secondary/60 sm:text-sm xl:w-80 
                       ${
                         errors.Email
                           ? "border-red-400 text-red-300"
