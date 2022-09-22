@@ -36,7 +36,8 @@ export default function About() {
             what can a trust do for you
           </h1>
           <p className="text-md mt-3 font-sans leading-7 text-secondary md:text-2xl">
-            With so much happening in the world, it’s essential to secure your assets for your loved ones and yourself.
+            With so much happening in the world, it’s essential to secure your
+            assets for your loved ones and yourself.
           </p>
         </div>
         <div className="mx-5 mt-5 grid grid-cols-1 grid-rows-3 items-center justify-center gap-5 md:grid-cols-2 md:grid-rows-3 lg:mx-10 lg:mt-10 lg:gap-x-44">
