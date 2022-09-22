@@ -31,11 +31,11 @@ export default function About() {
       animate={control}
     >
       <div className="rounded-md bg-cream py-10 drop-shadow-lg lg:py-20">
-        <div className="mx-4 text-center lg:mx-auto">
+        <div className="mx-4 text-center xl:mx-auto">
           <h1 className="font-display text-2xl font-bold capitalize leading-8 text-purple md:text-4xl lg:text-5xl lg:leading-12">
             what can a trust do for you
           </h1>
-          <p className="text-md mt-3 font-sans leading-7 text-secondary md:text-2xl">
+          <p className="text-md mt-3 font-sans leading-7 text-secondary md:text-lg lg:text-2xl">
             With so much happening in the world, it’s essential to secure your
             assets for your loved ones and yourself.
           </p>
