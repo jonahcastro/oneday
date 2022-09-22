@@ -64,9 +64,7 @@ export default function Contact() {
               Stay Updated
             </h1>
             <p className="mt-5 font-sans text-sm leading-7 text-white md:text-lg">
-              Be the first to know when we launch and receive monthly
-              newsletters about how trusts work and why estate planning and
-              digital is the future.
+              Be the first to know when we launch and receive monthly newsletters about how trusts work and how it can help your estate planning.
             </p>
             <form
               method="post"
@@ -111,9 +109,7 @@ export default function Contact() {
               Help Us Help You
             </h1>
             <p className="mt-5 font-sans text-sm leading-7 text-white md:text-lg">
-              We would really appreciate your input to help us make the best
-              digital asset trust product possible. If you have ~5 minutes we
-              would love to get to know you and your goals better.
+              We would really appreciate your input to help us make the best online trust product possible. If you have ~5 minutes we would love to get to know you and your goals better. Get a discount on your setup fee by completing the survey and leaving your email address.
             </p>
             <div className="mt-10">
               <Link href={SURVEY_URL}>

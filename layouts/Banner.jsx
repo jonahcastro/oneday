@@ -44,8 +44,8 @@ export default function Banner() {
             }}
           >
             <div role="gridcell">
-              <h1 className="font-display text-3xl font-bold capitalize leading-8 text-purple md:text-5xl lg:text-7xl lg:leading-12">
-                Protect the future of your loved ones.
+              <h1 className="font-display text-3xl font-bold leading-8 text-purple md:text-5xl lg:text-7xl lg:leading-12">
+                Protect the Future of Your Loved Ones.
               </h1>
 
               <p className="mx-5 mt-5 font-sans text-sm leading-5  text-secondary md:text-lg lg:mx-10 lg:mt-10 lg:leading-7 ">

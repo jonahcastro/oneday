@@ -184,7 +184,7 @@ export default function Services() {
               </p>
               <p className="mt-5 text-left font-sans text-sm leading-7 text-secondary md:text-lg">
                 OneDay works with the world's leading financial institutions and
-                custodians to secure your assets, accessible directly from our
+                custodians to secure your assets, viewable directly from our
                 platform.
               </p>
             </div>
