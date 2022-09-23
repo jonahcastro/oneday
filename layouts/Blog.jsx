@@ -38,7 +38,7 @@ export default function Blog() {
             Blog
           </h1>
           <div className="grid grid-cols-1 gap-8 sm:mx-auto sm:max-w-sm md:mt-10 md:max-w-none md:grid-cols-3 lg:mt-16 lg:max-w-3xl xl:max-w-none">
-            <Link href="/blog">
+            <Link href="/blog/what-is-trust">
               <motion.a
                 className="rounded-md bg-cream px-5 pt-8"
                 whileHover={{ scale: 1.1 }}
@@ -54,7 +54,7 @@ export default function Blog() {
                 />
               </motion.a>
             </Link>
-            <Link href="/blog">
+            <Link href="/blog/trust-or-will">
               <motion.a
                 className="rounded-md bg-cream px-5 pt-8"
                 whileHover={{ scale: 1.1 }}
@@ -70,7 +70,7 @@ export default function Blog() {
                 />
               </motion.a>
             </Link>
-            <Link href="/blog">
+            <Link href="/blog/why-oneday">
               <motion.a
                 className="flex h-64 cursor-pointer rounded-md bg-cream lg:h-full"
                 whileHover={{ scale: 1.1 }}
