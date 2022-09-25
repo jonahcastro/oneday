@@ -67,8 +67,14 @@ export default function Blog() {
               assets quicker than the assets to be distributed under your Will.{" "}
               <br></br>
               <br></br>
-              Check out <a href="http://www.onedaywhen.io/blog/what-is-trust" className="underline">here</a> for more information on what a trust is
-              and who the parties are.
+              Check out{" "}
+              <a
+                href="http://www.onedaywhen.io/blog/what-is-trust"
+                className="underline"
+              >
+                here
+              </a>{" "}
+              for more information on what a trust is and who the parties are.
             </p>
 
             <h5 className="mx-5 mt-10 font-display text-3xl font-bold leading-8 text-purple md:text-5xl lg:text-4xl lg:leading-12">
